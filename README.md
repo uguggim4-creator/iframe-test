@@ -30,7 +30,7 @@ DNS·Vercel 추가 작업은 없음. `git push`만 하면 자동 배포.
 ### 1. 새 기수 폴더 생성 + LP 파일 복사
 
 ```powershell
-cd "E:\Ainspire agent\class-ainspire"
+cd E:\class-ainspire
 mkdir 5
 copy "C:\Users\Slit\OneDrive\바탕 화면\AInspire_5기_상세페이지.html" 5\index.html
 ```
@@ -74,7 +74,7 @@ git push origin main
 ## 기수별 LP 업데이트 (오타·가격 수정 등)
 
 ```powershell
-cd "E:\Ainspire agent\class-ainspire"
+cd E:\class-ainspire
 copy "C:\Users\Slit\OneDrive\바탕 화면\AInspire_4기_상세페이지.html" 4\index.html
 git add 4/index.html
 git commit -m "Update 4기 LP"
