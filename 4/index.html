@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AInspire 4기 — AI 영상 제작 OS 이식 12주</title>
+<title>AInspire 4기 — AI 영상 제작 OS 이식 9주</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
@@ -1410,6 +1410,7 @@ p.lead{
   grid-template-columns:1fr 1fr;
   gap:32px;
   margin-top:60px;
+  align-items:stretch;
 }
 @media(max-width:760px){.care-grid{grid-template-columns:1fr}}
 .care-card{
@@ -1417,6 +1418,8 @@ p.lead{
   border:1px solid var(--line);
   border-radius:var(--radius-lg);
   padding:32px;
+  display:flex;
+  flex-direction:column;
 }
 .care-card h3{
   font-size:18px;
@@ -1430,7 +1433,6 @@ p.lead{
   margin-bottom:20px;
 }
 .care-mock{
-  aspect-ratio:9/14;
   background:linear-gradient(180deg,#fce8b8,#fff3a6);
   border-radius:14px;
   padding:18px;
@@ -1440,7 +1442,6 @@ p.lead{
   position:relative;
   overflow:hidden;
 }
-.care-mock.discord{background:linear-gradient(180deg,#2a1359,#1a0a3d);color:rgba(255,255,255,0.85)}
 .care-mock .bubble{
   padding:8px 12px;
   background:var(--white);
@@ -1449,9 +1450,24 @@ p.lead{
   display:inline-block;
   max-width:80%;
 }
-.care-mock.discord .bubble{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.9)}
 .care-mock .bubble.me{background:var(--purple-500);color:var(--white);float:right;clear:both}
-.care-mock .bubble.bot{background:var(--yellow);color:var(--ink);font-weight:700}
+.care-card-footer{
+  margin-top:20px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.care-stat-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  font-size:13px;
+}
+.care-stat-row .lbl{color:var(--ink-3);font-weight:600;display:flex;align-items:center;gap:6px}
+.care-stat-row .val{color:var(--purple-600);font-weight:800;letter-spacing:-0.01em}
 
 /* ============ S20 가격압박 ============ */
 .pressure-headline{
@@ -2545,10 +2561,10 @@ footer{
           <strong style="color:var(--yellow);font-weight:800">시간과 비용</strong>을 세이브해드립니다.
         </p>
         <p style="margin-top:32px;font-size:15px;color:rgba(255,255,255,0.65);line-height:1.7;letter-spacing:-0.005em;max-width:520px">
-          AInspire 4기 — 하나의 아이디어를 12주 동안 <strong style="color:rgba(255,255,255,0.9)">광고 · 단편 · 시리즈 · 포트폴리오</strong>로 확장하는 <em style="color:var(--yellow);font-style:normal;font-weight:700">AI 영상 제작 OS 이식 과정</em>입니다.
+          AInspire 4기 — 하나의 아이디어를 9주 동안 <strong style="color:rgba(255,255,255,0.9)">광고 · 단편 · 시리즈 · 포트폴리오</strong>로 확장하는 <em style="color:var(--yellow);font-style:normal;font-weight:700">AI 영상 제작 OS 이식 과정</em>입니다.
         </p>
         <div class="hero-tagline">
-          강의를 듣지 마세요. 12주짜리 프로젝트를 키우세요.
+          강의를 듣지 마세요. 9주짜리 프로젝트를 키우세요.
         </div>
       </div>
 
@@ -2593,6 +2609,39 @@ footer{
     </div>
   </div>
 </section>
+
+<!-- ============ S01.5 입문자 안심 메시지 ============ -->
+<section class="section deep" style="padding:80px 0;background:linear-gradient(180deg,#080218 0%,#13063a 100%);position:relative;overflow:hidden">
+  <div style="position:absolute;top:-20%;left:-10%;width:50%;height:140%;background:radial-gradient(circle,rgba(96,32,255,0.18) 0%,transparent 60%);filter:blur(60px);pointer-events:none"></div>
+  <div style="position:absolute;top:-20%;right:-10%;width:50%;height:140%;background:radial-gradient(circle,rgba(0,180,216,0.15) 0%,transparent 60%);filter:blur(60px);pointer-events:none"></div>
+
+  <div class="wrap-narrow" style="position:relative;z-index:1">
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;padding:40px 44px;background:rgba(255,255,255,0.04);border:1px solid rgba(0,180,216,0.25);border-radius:var(--radius-lg);backdrop-filter:blur(10px)" class="reassure-grid">
+      <div style="font-size:64px;line-height:1;flex-shrink:0">🌱</div>
+      <div>
+        <div style="display:inline-block;font-size:11px;font-weight:800;color:var(--brand-cyan);letter-spacing:0.18em;padding:5px 12px;background:rgba(0,180,216,0.12);border:1px solid rgba(0,180,216,0.3);border-radius:999px;margin-bottom:14px">★ AI 영상제작 처음이세요?</div>
+        <h3 style="font-size:clamp(22px,2.6vw,30px);font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1.4;margin-bottom:14px">
+          입문자도 <span style="background:linear-gradient(135deg,#bba4ff,#4dd8ee);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">걱정 없습니다.</span><br>
+          본 강의 시작 전 <strong style="color:var(--yellow)">0주차에 상세 가이드</strong>를 드립니다.
+        </h3>
+        <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,0.85);margin-bottom:16px">
+          AI 영상제작이 처음이신 분들을 위해, 본 강의가 시작되기 전 <strong>W0 무료 사전 부트캠프</strong>에서 설치 · 첫 실행 · 첫 자동화까지 손 잡고 안내해드립니다. 클로드/코덱스를 한 번도 안 써보셨어도, AI 도구가 낯설어도, <strong style="color:#fff">단 한 분도 헤매지 않도록</strong> 매뉴얼·영상·라이브 트러블슈팅이 모두 준비되어 있습니다.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="display:inline-flex;align-items:center;gap:5px;padding:8px 14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:999px;font-size:12px;color:rgba(255,255,255,0.9);font-weight:600">📦 설치·세팅 풀가이드</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;padding:8px 14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:999px;font-size:12px;color:rgba(255,255,255,0.9);font-weight:600">🎥 OS별 분기 영상 (Win/Mac)</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;padding:8px 14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:999px;font-size:12px;color:rgba(255,255,255,0.9);font-weight:600">🆘 라이브 트러블슈팅 오피스아워</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;padding:8px 14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:999px;font-size:12px;color:rgba(255,255,255,0.9);font-weight:600">📚 텍스트 보조 가이드 병행</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+@media(max-width:680px){
+  .reassure-grid{grid-template-columns:1fr !important;text-align:center;padding:32px 24px !important;gap:18px !important}
+}
+</style>
 
 <!-- ============ S02 결제 ============ -->
 <section class="section dark">
@@ -2639,7 +2688,7 @@ footer{
           <li>클로드 / 코덱스가 영상 제작자에게 왜 필요한가</li>
           <li>설치 → 첫 실행 → 내 폴더 정리시키기</li>
           <li>반복 업무 1개를 자동화로 바꾸기</li>
-          <li>12주 프로젝트 3안 후보 추출 워크시트 배포</li>
+          <li>9주 프로젝트 3안 후보 추출 워크시트 배포</li>
           <li>1:1 오피스아워 — W1 직전까지 1안 확정</li>
         </ul>
         <div class="w0-output">
@@ -2648,7 +2697,7 @@ footer{
             <li>작동하는 클로드 / 코덱스 환경</li>
             <li>첫 자동화 결과물 1개</li>
             <li>자기 "Before 시간" 1개 기록</li>
-            <li>12주 프로젝트 후보 시트</li>
+            <li>9주 프로젝트 후보 시트</li>
           </ul>
         </div>
         <div class="cta-row">
@@ -2746,7 +2795,7 @@ footer{
 <section class="section tint">
   <div class="wrap">
     <div class="center">
-      <div class="eyebrow">12주 후, 손에 남는 것</div>
+      <div class="eyebrow">9주 후, 손에 남는 것</div>
       <h2 class="section-title center">수료증이 아니라,<br>영업에 바로 들고 가는 <span class="mark">5+1 산출물</span></h2>
     </div>
 
@@ -2908,38 +2957,6 @@ footer{
         <span class="yellow">이미 자기 포트폴리오로 영업하고 있습니다.</span>
       </p>
     </div>
-  </div>
-</section>
-
-<!-- ============ S09 11명 ============ -->
-<section class="section light">
-  <div class="wrap">
-    <div class="center">
-      <div class="eyebrow">수강생 작품</div>
-      <h2 class="section-title center">
-        수강생 작품을 공개합니다.<br>
-        <span style="font-size:0.7em;color:var(--ink-3);font-weight:600">불과 6개월 전엔 '초보'였던 분들도 있습니다.</span>
-      </h2>
-    </div>
-
-    <div class="student-grid">
-      <div class="student-card"><div class="student-thumb">로맨틱모트 작품</div><div class="student-info"><div class="student-name">로맨틱모트 님</div><div class="student-achv">2015 APEC 최우수상<br>KT 공모전 영화 <strong>우수상</strong></div></div></div>
-      <div class="student-card"><div class="student-thumb">조동화 작품</div><div class="student-info"><div class="student-name">조동화 님</div><div class="student-achv">상반기에만 <strong>10개 공모전 수상</strong></div></div></div>
-      <div class="student-card"><div class="student-thumb">박선영 작품</div><div class="student-info"><div class="student-name">박선영 님 @yuayera</div><div class="student-achv">영상 비전공자로 <strong>10개 공모전 수상</strong></div></div></div>
-      <div class="student-card"><div class="student-thumb">이승주 작품</div><div class="student-info"><div class="student-name">이승주 님</div><div class="student-achv">간호사 출신으로 25년<br><strong>12개 공모전 수상</strong></div></div></div>
-      <div class="student-card"><div class="student-thumb">여별 작품</div><div class="student-info"><div class="student-name">여별 님</div><div class="student-achv">2025 경주 APEC AI 영상 콘텐츠<br>K-POP 부문 — <strong>우수상</strong></div></div></div>
-      <div class="student-card"><div class="student-thumb">함세준 작품</div><div class="student-info"><div class="student-name">함세준 님</div><div class="student-achv"><strong>해외 공모전 최우수상</strong></div></div></div>
-      <div class="student-card"><div class="student-thumb">안성우 작품</div><div class="student-info"><div class="student-name">안성우 님</div><div class="student-achv">데지로 플롯페스티벌 — <strong>새벽바이오</strong></div></div></div>
-      <div class="student-card"><div class="student-thumb">acasa 작품</div><div class="student-info"><div class="student-name">acasa 님</div><div class="student-achv"><strong>해외 공모전 7개</strong> 휩쓸기</div></div></div>
-      <div class="student-card"><div class="student-thumb">Hero Re 작품</div><div class="student-info"><div class="student-name">Hero Re 님</div><div class="student-achv">광고바이커 4계 공모전 수상</div></div></div>
-      <div class="student-card"><div class="student-thumb">스즈 작품</div><div class="student-info"><div class="student-name">스즈 님</div><div class="student-achv">유튜리뷰스 채널 운영</div></div></div>
-      <div class="student-card"><div class="student-thumb">야미 작품</div><div class="student-info"><div class="student-name">야미 님</div><div class="student-achv"><strong>해외 공모전 11관왕</strong> & IMDb 감독 등록</div></div></div>
-    </div>
-
-    <p class="student-note">
-      ※ 각 카드에는 수강생 동의를 받은 작품 영상이 임베드됩니다.<br>
-      ※ 풀버전 작품은 졸업식 라이브 쇼케이스에서 공개됩니다.
-    </p>
   </div>
 </section>
 
@@ -3731,7 +3748,7 @@ footer{
     <div class="center">
       <div class="eyebrow">졸업 후 실질 혜택 · Beyond 12 Weeks</div>
       <h2 class="section-title center">
-        12주가 끝이 아닙니다.<br>
+        9주가 끝이 아닙니다.<br>
         <span class="mark">실제 노출과 연결로 이어집니다.</span>
       </h2>
       <p class="lead" style="max-width:720px;margin:0 auto">
@@ -4245,7 +4262,12 @@ footer{
       <h2 class="section-title center">사후 케어에 <span class="mark">최선</span>을 다합니다.</h2>
     </div>
 
+    <p class="lead center" style="max-width:660px;margin:0 auto;font-size:clamp(15px,1.6vw,18px)">
+      결제 후가 진짜 시작입니다. <strong style="color:var(--purple-600)">졸업 후에도 평생 이어지는 케어</strong>를 약속드립니다.
+    </p>
+
     <div class="care-grid">
+
       <div class="care-card">
         <h3>2 · 3 · 4기 오픈채팅방 (영구 운영)</h3>
         <div class="care-meta">유료 수강자 전용 · 카카오톡 · 졸업 후에도 평생 유지</div>
@@ -4258,9 +4280,16 @@ footer{
           <div class="bubble me">W4 가이드 보내드립니다.</div>
           <div style="clear:both"></div>
           <div class="bubble">3기 졸업했는데 신규 도구 정보 공유해도 되나요?</div>
-          <div class="bubble me">물론이죠! 통합방이라 자유롭게요.</div>
+          <div class="bubble me">물론이죠! 자유롭게요.</div>
+        </div>
+        <div class="care-card-footer">
+          <div class="care-stat-row"><span class="lbl">💬 누적 메시지</span><span class="val">10,000+건</span></div>
+          <div class="care-stat-row"><span class="lbl">👥 활성 멤버</span><span class="val">300명+ (2·3기 졸업생 포함)</span></div>
+          <div class="care-stat-row"><span class="lbl">📢 신규 도구 정보 공유</span><span class="val">매일 누적</span></div>
+          <div class="care-stat-row"><span class="lbl">🤝 졸업생 간 협업·외주</span><span class="val">자유 매칭</span></div>
         </div>
       </div>
+
       <div class="care-card">
         <h3>강의실 Q&amp;A 게시판 + 운영진 직접 응대</h3>
         <div class="care-meta">196건 이상 누적 · 결제·시청·툴 모든 질문 대응</div>
@@ -4270,9 +4299,35 @@ footer{
           <div style="clear:both"></div>
           <div class="bubble" style="background:var(--white);border:1px solid var(--line)"><strong style="color:var(--purple-600)">Q. 360일 연장 자동 적용?</strong></div>
           <div class="bubble me" style="background:var(--purple-500);color:#fff">기존·신규 수강자 모두 자동 적용 완료</div>
+          <div style="clear:both"></div>
+          <div class="bubble" style="background:var(--white);border:1px solid var(--line)"><strong style="color:var(--purple-600)">Q. 6개월 무이자 할부 실패…</strong></div>
+          <div class="bubble me" style="background:var(--purple-500);color:#fff">카드사별 무이자 정책 차이입니다. 안내 메일 드릴게요.</div>
+        </div>
+        <div class="care-card-footer">
+          <div class="care-stat-row"><span class="lbl">📋 누적 Q&amp;A</span><span class="val">196건+ 누적</span></div>
+          <div class="care-stat-row"><span class="lbl">⏱ 평균 응답 시간</span><span class="val">영업일 기준 1~3시간</span></div>
+          <div class="care-stat-row"><span class="lbl">🛠 응대 범위</span><span class="val">결제·시청·툴·실무 전부</span></div>
+          <div class="care-stat-row"><span class="lbl">✉️ 직접 문의</span><span class="val">gun@ainspire.co.kr</span></div>
         </div>
       </div>
+
     </div>
+
+    <div style="margin-top:36px;padding:24px 28px;background:linear-gradient(135deg,rgba(96,32,255,0.06),rgba(0,180,216,0.06));border:1px solid var(--purple-100);border-radius:var(--radius);display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center" class="care-quick-grid">
+      <div>
+        <div style="font-size:11px;font-weight:800;color:var(--purple-600);letter-spacing:0.1em;margin-bottom:6px">🎓 졸업식</div>
+        <div style="font-size:13px;color:var(--ink-2);line-height:1.5">YouTube 라이브 쇼케이스 + 외부 손님 초대</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:800;color:var(--purple-600);letter-spacing:0.1em;margin-bottom:6px">🍻 오프라인 모임</div>
+        <div style="font-size:13px;color:var(--ink-2);line-height:1.5">연 2회 정기 밋업 · 졸업 후 매년 무제한 참석</div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:800;color:var(--purple-600);letter-spacing:0.1em;margin-bottom:6px">🌟 Summit</div>
+        <div style="font-size:13px;color:var(--ink-2);line-height:1.5">AInspire Summit 우선 신청권 평생 유지</div>
+      </div>
+    </div>
+    <style>@media(max-width:680px){.care-quick-grid{grid-template-columns:1fr !important}}</style>
   </div>
 </section>
 
@@ -4349,7 +4404,50 @@ footer{
       </div>
     </div>
 
-    <div class="option-grid">
+    <!-- AInspire 큐레이션 추천 가이드 -->
+    <div style="margin-top:60px;padding:44px 40px;background:linear-gradient(135deg,rgba(96,32,255,0.12) 0%,rgba(0,180,216,0.12) 100%);border:1px solid rgba(0,180,216,0.3);border-radius:var(--radius-lg);position:relative;overflow:hidden">
+      <div style="position:absolute;top:-30%;right:-10%;width:50%;height:160%;background:radial-gradient(circle,rgba(0,180,216,0.18),transparent 60%);filter:blur(50px);pointer-events:none"></div>
+      <div style="position:relative;z-index:1">
+        <div style="display:inline-block;font-size:11px;font-weight:800;color:var(--yellow);letter-spacing:0.18em;padding:6px 14px;background:rgba(255,230,0,0.12);border:1px solid rgba(255,230,0,0.3);border-radius:999px;margin-bottom:20px">★ AInspire 직접 추천</div>
+        <h3 style="font-size:clamp(24px,2.8vw,32px);font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1.35;margin-bottom:24px">
+          어떤 옵션이 나에게 맞을까?<br>
+          <span style="background:linear-gradient(135deg,#bba4ff,#4dd8ee);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">AInspire가 직접 권해드립니다.</span>
+        </h3>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px" class="reco-grid">
+
+          <!-- 풀패키지 추천 -->
+          <div style="padding:24px;background:rgba(255,230,0,0.06);border:2px solid var(--yellow);border-radius:var(--radius);position:relative">
+            <div style="position:absolute;top:-12px;left:20px;padding:5px 14px;background:var(--yellow);color:var(--ink);font-size:11px;font-weight:900;letter-spacing:0.05em;border-radius:999px">⭐ MOST RECOMMENDED</div>
+            <div style="font-size:15px;font-weight:800;color:var(--yellow);margin-top:8px;margin-bottom:10px">🔥 풀 패키지를 강력 추천드립니다</div>
+            <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.85)">
+              2·3·4기 <strong style="color:#fff">모든 커리큘럼</strong>을 들을 수 있어, 지금 시작해도 <strong style="color:var(--yellow)">충분히 따라잡을 수 있습니다.</strong> 기획부터 실무까지 누락 없이 학습 가능. AInspire 자산을 한 번에 다 흡수하고 싶다면 이 옵션.
+            </p>
+          </div>
+
+          <!-- 기획 추가 추천 (초보자) -->
+          <div style="padding:24px;background:rgba(96,32,255,0.12);border:1.5px solid var(--purple-400);border-radius:var(--radius)">
+            <div style="font-size:11px;font-weight:800;color:var(--brand-cyan);letter-spacing:0.15em;margin-bottom:10px">★ 초보자라면 꼭</div>
+            <div style="font-size:15px;font-weight:800;color:#fff;margin-bottom:10px">🎯 기획 강의는 꼭 추가하세요</div>
+            <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.85)">
+              초보자일수록 <strong style="color:#fff">기획 강의만이라도 추가</strong>하는 것을 권장합니다. AI 툴에 익숙하시더라도 <em>영상 제작에 한계</em>를 느끼거나 <em>기획이 어려운 분</em>은 기획 강의 추가가 가장 큰 변화를 만듭니다.
+            </p>
+          </div>
+
+          <!-- Basic도 충분 -->
+          <div style="padding:24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius)">
+            <div style="font-size:11px;font-weight:800;color:rgba(255,255,255,0.5);letter-spacing:0.15em;margin-bottom:10px">BASIC만 들으셔도</div>
+            <div style="font-size:15px;font-weight:800;color:#fff;margin-bottom:10px">🌱 Basic만 들으셔도 충분합니다</div>
+            <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.85)">
+              Basic만 수강하시더라도 <strong style="color:var(--yellow)">2026년 최신 기준 예산별 세팅</strong>을 함께 제안드립니다. 본인 환경에 맞는 도구 선택·예산 분배·우선순위까지 함께 안내.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="option-grid" style="margin-top:36px">
 
       <!-- Basic -->
       <div class="option-card">
@@ -4361,9 +4459,10 @@ footer{
           <span>사전 예약 즉시할인</span><strong>-100,000원</strong>
         </div>
         <ul class="option-includes">
-          <li>4기 정규 12주 커리큘럼 전체</li>
-          <li>W0 무료 부트캠프</li>
+          <li>4기 정규 8주 + W9 시크릿 강의 전체</li>
+          <li>W0 무료 부트캠프 (입문자도 OK)</li>
           <li><strong style="color:var(--yellow)">VOD 360일 시청 ⚡ (180일 → 360일 전격 연장)</strong></li>
+          <li><strong style="color:var(--yellow)">2026년 최신 기준 예산별 세팅 제안</strong></li>
           <li>10가지 혜택 패키지 전부</li>
           <li>2·3·4기 오픈채팅방 영구 운영</li>
           <li>우수작 AInspire 쇼릴 등재 기회</li>
@@ -4374,8 +4473,9 @@ footer{
 
       <!-- 기획 + Basic -->
       <div class="option-card featured">
+        <div style="display:inline-block;font-size:10px;font-weight:900;letter-spacing:0.08em;padding:5px 12px;background:var(--brand-cyan);color:#0a0518;border-radius:999px;margin-bottom:14px;align-self:flex-start">★ 초보자 강력 추천</div>
         <div class="option-name">기획강의 추가</div>
-        <div class="option-tag">🎯 기획부터 제대로 · 2·3기 핵심 자산까지</div>
+        <div class="option-tag">🎯 AI 툴 익숙해도 *영상 제작·기획*에 한계 느낀다면</div>
         <div class="option-strike">정가 578,000원 (Basic 489,000 + 기획 89,000)</div>
         <div class="option-price">478,000<small>원</small></div>
         <div class="option-early">
@@ -4388,6 +4488,7 @@ footer{
           <li>광고·드라마타이즈 기획 SOP</li>
           <li>스토리텔링 / 광고 전략 / 시네마 호흡</li>
           <li>기획 강의 풀버전 별도 제공</li>
+          <li><strong style="color:var(--yellow)">초보자가 가장 빠르게 성장하는 길</strong></li>
           <li>2·3·4기 오픈채팅방 영구 운영</li>
           <li>우수작 쇼릴 등재 + 협력사 추천 우선순위</li>
         </ul>
@@ -4396,9 +4497,9 @@ footer{
 
       <!-- 풀 패키지 -->
       <div class="option-card best">
-        <div class="option-badge">⭐ BEST VALUE</div>
+        <div class="option-badge">⭐ AINSPIRE 강력 추천</div>
         <div class="option-name">풀 패키지</div>
-        <div class="option-tag">🔥 AInspire 전체 자산 · 2·3·4기 통째로</div>
+        <div class="option-tag">🔥 모든 커리큘럼 학습 · 지금 시작해도 따라잡기 가능</div>
         <div class="option-strike">정가 합계 1,467,000원</div>
         <div class="option-price">589,000<small>원</small></div>
         <div class="option-early">
@@ -4406,9 +4507,10 @@ footer{
         </div>
         <div class="option-saving">총 878,000원 절감 · 정가 대비 약 60% 할인</div>
         <ul class="option-includes">
-          <li>4기 정규 12주 전체 (VOD 360일 ⚡)</li>
+          <li>4기 정규 8주 + W9 시크릿 전체 (VOD 360일 ⚡)</li>
           <li><strong style="color:var(--yellow)">+ 2기 강의 전체</strong></li>
           <li><strong style="color:var(--yellow)">+ 3기 강의 전체</strong></li>
+          <li><strong style="color:var(--yellow)">모든 커리큘럼 학습 → 늦게 시작해도 완전 따라잡기</strong></li>
           <li>3개 기수의 모든 보너스 자료</li>
           <li>AInspire 전체 누적 노하우</li>
           <li>2·3·4기 오픈채팅방 영구 운영</li>
@@ -4547,7 +4649,7 @@ footer{
         </div>
       </div>
       <div>
-        <h3 style="font-size:18px;font-weight:800;margin-bottom:16px;color:var(--purple-600)">12주 동안 채널에 누적될 케이스 11편</h3>
+        <h3 style="font-size:18px;font-weight:800;margin-bottom:16px;color:var(--purple-600)">9주 동안 채널에 누적될 케이스 11편</h3>
         <div class="case-matrix">
           <div class="case-card"><div class="wk">W4</div><div class="topic">화장품 광고</div></div>
           <div class="case-card"><div class="wk">W5</div><div class="topic">자동차/금융</div></div>
@@ -4719,9 +4821,9 @@ Basic 결제 후 *기획+Basic* 또는 *풀 패키지*로 업그레이드를 원
 
       <details class="faq">
         <summary>Q15. 4기는 2·3기와 무엇이 다른가요?</summary>
-        <div class="answer">2·3기가 단일 작업물 중심이었다면, 4기는 <strong>12주 동안 하나의 아이디어를 광고·단편·시리즈·포트폴리오로 확장</strong>하는 *AI 영상 제작 OS 이식 과정*입니다.
+        <div class="answer">2·3기가 단일 작업물 중심이었다면, 4기는 <strong>9주 동안 하나의 아이디어를 광고·단편·시리즈·포트폴리오로 확장</strong>하는 *AI 영상 제작 OS 이식 과정*입니다.
 
-12주 후 손에 5+1 산출물(개인 제작 OS · 광고 캠페인 · 단편 · 시리즈 트레일러 · 포트폴리오 페이지 · 시간 단축 리포트)이 남습니다. 또한 W0 무료 부트캠프와 클로드/코덱스 횡단 트랙이 새로 추가되었습니다.
+9주 후 손에 5+1 산출물(개인 제작 OS · 광고 캠페인 · 단편 · 시리즈 트레일러 · 포트폴리오 페이지 · 시간 단축 리포트)이 남습니다. 또한 W0 무료 부트캠프와 클로드/코덱스 횡단 트랙이 새로 추가되었습니다.
 
 기존 2·3기를 수강하셨다면 *기획+Basic* 또는 *풀 패키지* 옵션을 추천드립니다.</div>
       </details>
