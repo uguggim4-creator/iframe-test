@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AInspire 4기 — AI 영상 제작 OS 이식 9주</title>
-<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
@@ -808,6 +807,196 @@ p.lead{
   letter-spacing:-0.015em;
 }
 .motivation-box p .yellow{color:var(--yellow)}
+
+/* ============ S08 3기 수상 스포트라이트 ============ */
+.award-spotlight{margin:56px 0 8px}
+.award-spotlight-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-bottom:36px;
+}
+.award-spotlight-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 22px;
+  background:linear-gradient(135deg,#ffe600 0%,#ffa500 100%);
+  color:var(--ink);
+  border-radius:999px;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:0.06em;
+  box-shadow:0 10px 28px rgba(255,165,0,0.25);
+}
+.award-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+@media(max-width:768px){.award-grid{grid-template-columns:1fr}}
+.award-card{
+  position:relative;
+  background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));
+  border:1px solid rgba(255,230,0,0.22);
+  border-radius:var(--radius);
+  padding:28px 26px 26px;
+  transition:transform .25s, border-color .25s, box-shadow .25s;
+  overflow:hidden;
+}
+.award-card::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;
+  width:4px;height:100%;
+  background:linear-gradient(180deg,#ffe600,#ffa500);
+}
+.award-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(255,230,0,0.55);
+  box-shadow:0 18px 40px rgba(255,230,0,0.12);
+}
+.award-card.featured{
+  background:linear-gradient(180deg,rgba(255,230,0,0.14),rgba(255,165,0,0.04));
+  border:1px solid rgba(255,230,0,0.5);
+  grid-column:span 2;
+}
+@media(max-width:768px){.award-card.featured{grid-column:span 1}}
+.award-card-crown{
+  position:absolute;
+  top:18px;right:20px;
+  font-size:22px;
+  filter:drop-shadow(0 4px 10px rgba(255,230,0,0.4));
+}
+.award-card-head{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:8px;
+}
+.award-card-name{
+  font-size:20px;
+  font-weight:800;
+  color:var(--white);
+  letter-spacing:-0.01em;
+}
+.award-card.featured .award-card-name{font-size:24px}
+.award-card-tag{
+  font-size:12px;
+  font-weight:700;
+  color:var(--yellow);
+  padding:4px 11px;
+  background:rgba(255,230,0,0.14);
+  border:1px solid rgba(255,230,0,0.3);
+  border-radius:999px;
+  letter-spacing:0.03em;
+}
+.award-card-work{
+  font-size:14.5px;
+  font-weight:600;
+  color:rgba(255,255,255,0.62);
+  margin-bottom:18px;
+  letter-spacing:-0.005em;
+}
+.award-card-work em{
+  color:var(--brand-cyan-soft);
+  font-style:normal;
+  font-weight:700;
+}
+.award-card-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.award-card-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:14.5px;
+  line-height:1.5;
+  color:rgba(255,255,255,0.92);
+}
+.award-card-list li::before{
+  content:'🏆';
+  flex-shrink:0;
+  font-size:14px;
+  margin-top:1px;
+}
+.award-card-list li.nominate::before{content:'⭐';}
+.award-card-list li.progress::before{content:'🎯';}
+.award-card-list li strong{
+  color:var(--yellow);
+  font-weight:800;
+}
+.award-summary-banner{
+  margin:40px 0 0;
+  padding:26px 28px;
+  border-radius:var(--radius);
+  background:linear-gradient(135deg,rgba(96,32,255,0.28),rgba(0,180,216,0.16));
+  border:1px solid rgba(143,85,255,0.4);
+  text-align:center;
+}
+.award-summary-banner p{
+  font-size:clamp(16px,1.6vw,18px);
+  font-weight:600;
+  color:rgba(255,255,255,0.95);
+  line-height:1.65;
+}
+.award-summary-banner p strong{color:var(--yellow);font-weight:800}
+.award-divider{
+  margin:56px 0 24px;
+  text-align:center;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.12em;
+  color:rgba(255,255,255,0.45);
+  text-transform:uppercase;
+}
+.award-divider::before,.award-divider::after{
+  content:'';
+  display:inline-block;
+  width:40px;height:1px;
+  background:rgba(255,255,255,0.18);
+  vertical-align:middle;
+  margin:0 14px;
+}
+.award-origin-line{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin:6px 0 18px;
+  padding:8px 14px;
+  background:linear-gradient(135deg,rgba(96,32,255,0.22),rgba(0,180,216,0.18));
+  border:1px solid rgba(143,85,255,0.4);
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+  color:rgba(255,255,255,0.92);
+  letter-spacing:-0.005em;
+}
+.award-origin-line::before{
+  content:'';
+  display:inline-block;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--brand-cyan-soft);
+  box-shadow:0 0 0 3px rgba(77,216,238,0.25);
+}
+.award-origin-line .arrow{
+  color:var(--yellow);
+  font-weight:900;
+  letter-spacing:0;
+}
+.award-origin-line .hl{
+  color:var(--yellow);
+  font-weight:800;
+}
 
 /* ============ S09 11명 카드 ============ */
 .student-grid{
@@ -2520,6 +2709,72 @@ footer{
 @media(max-width:760px){.curric-risk-box{margin:0 22px 20px}}
 .curric-week-card.bonus .curric-risk-box{background:rgba(255,193,7,0.12);color:#ffd966;border-left-color:#ffd700}
 .curric-week-card.bonus .curric-risk-box strong{color:var(--yellow)}
+
+/* ============ MOBILE LAYOUT FIXES ============ */
+/* S01 HERO — 모바일 가독성 / 카드 내부 압축 */
+@media(max-width:768px){
+  .hero{padding-top:96px !important;padding-bottom:64px !important}
+  .hero-brand{font-size:12px;letter-spacing:0.22em;margin-bottom:14px}
+  h1.hero-title{font-size:clamp(30px,8vw,42px);line-height:1.2}
+  .hero-tagline{margin-top:24px;padding:14px 18px;font-size:14px;line-height:1.5}
+  .hero-card{padding:24px 20px;border-radius:22px}
+  .price-box{padding:20px 18px}
+  .price-main{font-size:clamp(34px,9vw,44px)}
+  .price-meta{font-size:13px;gap:10px}
+  .price-warning{font-size:12px;line-height:1.55}
+  .badge-row{gap:8px;margin-top:18px}
+  .badge{padding:7px 12px;font-size:12px}
+  .hero-card .cta-row{flex-direction:column;gap:10px}
+  .hero-card .cta-row .btn{flex:1 1 auto !important;width:100%;padding:16px 22px;font-size:15px}
+}
+@media(max-width:420px){
+  .hero-card{padding:20px 16px}
+  .price-box{padding:18px 14px}
+  .price-main{font-size:34px}
+}
+
+/* S14 BEYOND 9 WEEKS — 카드 2열 → 1열 */
+.postgrad-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:60px}
+@media(max-width:860px){
+  .postgrad-grid{grid-template-columns:1fr !important;gap:20px !important;margin-top:40px !important}
+  .postgrad-grid > div{padding:36px 24px !important;border-radius:22px !important}
+  .postgrad-grid h3{font-size:22px !important;line-height:1.35 !important}
+  .postgrad-grid p{font-size:14.5px !important;line-height:1.7 !important}
+}
+
+/* RECAP · 2026 상반기 — 통계 / 스폰서 / 참석자 / 프로그램 그리드 */
+@media(max-width:860px){
+  .summit-stats{grid-template-columns:repeat(2,1fr) !important;gap:12px !important}
+  .summit-stats > div{padding:22px 14px !important}
+  .summit-stats > div > div:first-child{font-size:clamp(28px,8vw,40px) !important}
+  .summit-sponsors{grid-template-columns:1fr !important;gap:10px !important}
+  .summit-sponsors > div{padding:18px 16px !important;text-align:left !important;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .summit-attendees{grid-template-columns:repeat(2,1fr) !important;gap:10px !important}
+  .summit-attendees > div{padding:14px 10px !important;font-size:12.5px !important}
+  .summit-program{grid-template-columns:1fr !important;gap:10px !important}
+  .summit-program > div{padding:20px 18px !important;display:flex !important;align-items:center;text-align:left !important;gap:14px}
+  .summit-program > div > div:first-child{font-size:28px !important;margin-bottom:0 !important;flex-shrink:0}
+}
+/* RECAP 카드 외곽 패딩 — 모바일 압축 */
+@media(max-width:768px){
+  section#summit .wrap > div[style*="padding:48px"]{padding:28px 20px !important;border-radius:22px !important}
+  section#summit .wrap [style*="padding:48px"] > div[style*="display:flex"][style*="gap:16px"]{gap:10px !important;margin-bottom:22px !important;flex-direction:column;align-items:flex-start !important}
+  section#summit .wrap [style*="padding:48px"] h3{font-size:20px !important;line-height:1.35 !important}
+  section#summit .wrap [style*="padding:48px"] > div[style*="margin-bottom:36px"]{margin-bottom:24px !important}
+}
+
+/* ★ AInspire 직접 추천 — 3열 → 1열 + 카드 외곽 압축 */
+.reco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){
+  .reco-grid{grid-template-columns:1fr !important;gap:14px !important}
+  .reco-grid > div{padding:22px 20px !important}
+  .reco-grid h3, .reco-grid > div > div[style*="font-size:15px"]{font-size:15px !important}
+  .reco-grid p{font-size:13.5px !important;line-height:1.65 !important}
+}
+@media(max-width:768px){
+  section[id="options"] .wrap > div[style*="padding:44px 40px"]{padding:28px 20px !important;border-radius:22px !important;margin-top:36px !important}
+  section[id="options"] .wrap > div[style*="padding:44px 40px"] h3{font-size:22px !important;line-height:1.3 !important;margin-bottom:18px !important}
+}
 </style>
 </head>
 <body>
@@ -3120,15 +3375,124 @@ footer{
     <div class="center">
       <div class="eyebrow on-dark">수강생 성과 + 동기 자극</div>
       <h2 class="section-title center" style="color:var(--white)">
-        국내 메이저 공모전을 휩쓸다.
+        국내를 넘어,<br>
+        <span class="yellow">글로벌 영화제를 휩쓸다.</span>
       </h2>
-      <p class="lead">150통의 메일을 주고받으며, 함께 했습니다.</p>
+      <p class="lead">3기 단톡방 17,543줄의 기록 — 5개월 만에 국제 영화제·공모전 수상 소식이 이어졌습니다.</p>
     </div>
 
+    <!-- 3기 수상 스포트라이트 -->
+    <div class="award-spotlight">
+      <div class="award-spotlight-header">
+        <span class="award-spotlight-badge">🏆 3기 수상 스포트라이트 · 2026.05 기준</span>
+      </div>
+
+      <div class="award-grid">
+
+        <!-- 오유리 · 4관왕 (Featured) -->
+        <div class="award-card featured">
+          <span class="award-card-crown">👑</span>
+          <div class="award-card-head">
+            <span class="award-card-name">오유리</span>
+            <span class="award-card-tag">국제 영화제 4관왕</span>
+          </div>
+          <div class="award-origin-line">
+            <span>1년 전, <span class="hl">영상 비전공자</span></span>
+            <span class="arrow">→</span>
+            <span>지금, <span class="hl">국제 영화제 4관왕</span></span>
+          </div>
+          <div class="award-card-work">작품 <em>Miserere Tui / 미제레레 투이</em></div>
+          <ul class="award-card-list">
+            <li>제1회 <strong>청강국제AI장르영상제 · 최우수상</strong></li>
+            <li>상하이 <strong>OMNI 국제 AI 영화제 · 준우승</strong></li>
+            <li><strong>월드인디필름페스티벌 · Best AI Film</strong></li>
+            <li><strong>스웨덴 필름 어워드 · 수상 및 공식선정</strong></li>
+          </ul>
+        </div>
+
+        <!-- 황세준 (율파파) -->
+        <div class="award-card">
+          <span class="award-card-crown">👑</span>
+          <div class="award-card-head">
+            <span class="award-card-name">황세준</span>
+            <span class="award-card-tag">율파파</span>
+          </div>
+          <div class="award-card-work">작품 <em>THE BIN CHICKEN / 빈치킨</em></div>
+          <ul class="award-card-list">
+            <li><strong>KaiCON AI Film Festival 2026 · 대상</strong><br><span style="color:rgba(255,255,255,0.55);font-size:13px">해럴드미디어그룹 · 한국AI마케팅연구소 · KGIT 공동 주관</span></li>
+            <li class="nominate">제1회 청강국제AI장르영상제 <strong>본선 진출</strong></li>
+          </ul>
+        </div>
+
+        <!-- 김찬 (스푸 · sputlab) -->
+        <div class="award-card">
+          <span class="award-card-crown">👑</span>
+          <div class="award-card-head">
+            <span class="award-card-name">김찬</span>
+            <span class="award-card-tag">스푸 · sputlab</span>
+          </div>
+          <div class="award-card-work">해외 영화제 어워드 위너</div>
+          <ul class="award-card-list">
+            <li><strong>해외 영화제 어워드 위너 3관왕</strong></li>
+            <li><strong>IMDb 감독 정식 등재</strong></li>
+          </ul>
+        </div>
+
+        <!-- ws · ecaia -->
+        <div class="award-card">
+          <div class="award-card-head">
+            <span class="award-card-name">ws</span>
+            <span class="award-card-tag">작가명 ecaia</span>
+          </div>
+          <div class="award-card-work">작품 <em>Blood Print</em></div>
+          <ul class="award-card-list">
+            <li><strong>AFRICA AI CREATIVITY Awards · Award Winner</strong></li>
+            <li>이탈리아 <strong>WIFA 국제 영상 페스티벌 · 공식 선정</strong></li>
+          </ul>
+        </div>
+
+        <!-- 박태형 · OYE -->
+        <div class="award-card">
+          <div class="award-card-head">
+            <span class="award-card-name">박태형</span>
+            <span class="award-card-tag">OYE 공모전</span>
+          </div>
+          <div class="award-card-work">"우리 모두 아가였잖아요" · 아가방 연관 공모전</div>
+          <ul class="award-card-list">
+            <li><strong>OYE.ai.kr 공모전 · 3등 수상</strong></li>
+          </ul>
+        </div>
+
+        <!-- 이석하 · 초록뱀미디어 -->
+        <div class="award-card">
+          <div class="award-card-head">
+            <span class="award-card-name">이석하</span>
+            <span class="award-card-tag">초록뱀미디어</span>
+          </div>
+          <div class="award-card-work">방송사 AI 드라마 부문 진행 중</div>
+          <ul class="award-card-list">
+            <li class="progress">초록뱀미디어 <strong>AI 드라마 부문 1차 합격</strong> · 2차 PPT 준비 중</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="award-summary-banner">
+        <p>
+          단 한 기수, 5개월 만에 — <strong>국제 영화제 8관왕</strong>, <strong>IMDb 감독 등재</strong>,<br>
+          방송사 드라마 1차 합격, 해외·국내 공모전 수상까지.
+        </p>
+      </div>
+    </div>
+
+    <div class="award-divider">1·2기 누적 성과</div>
+
     <ul class="achievement-list">
+      <li><strong>1인 국제 영화제 40관왕</strong> 달성</li>
+      <li><strong>1인 국제 영화제 30관왕</strong> 달성</li>
       <li>상반기 최대 규모 <strong>해외 공모전 최우수상</strong> 수상</li>
       <li>KT 공모전 우수상 & APEC 공모전 최우수상 석권</li>
-      <li>우미미디어 미디어아트 우수상 및 갤러리 전시 작가 배출</li>
+      <li>우리미디어 미디어아트 우수상 및 갤러리 전시 작가 배출</li>
       <li>"포토샵도 켤 줄 몰랐습니다" → <strong>공모전 10관왕</strong> 달성</li>
       <li>"혼자서 가능할까?" → 상반기 혼자서 10개 공모전 수상</li>
       <li>그 외 3~4개월 기점, 1~2개 수상자는 셀 수 없이 많습니다.</li>
@@ -3138,7 +3502,7 @@ footer{
       <p>
         당신이 망설이는 사이,<br>
         AInspire 동기들은<br>
-        <span class="yellow">이미 자기 포트폴리오로 영업하고 있습니다.</span>
+        <span class="yellow">이미 글로벌 영화제 트로피를 들고 있습니다.</span>
       </p>
     </div>
   </div>
@@ -3963,7 +4327,7 @@ footer{
 <section class="section tint" id="post-grad">
   <div class="wrap">
     <div class="center">
-      <div class="eyebrow">졸업 후 실질 혜택 · Beyond 12 Weeks</div>
+      <div class="eyebrow">졸업 후 실질 혜택 · Beyond 9 Weeks</div>
       <h2 class="section-title center">
         9주가 끝이 아닙니다.<br>
         <span class="mark">실제 노출과 연결로 이어집니다.</span>
