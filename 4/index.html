@@ -2063,6 +2063,160 @@ footer{
 .option-card.best .option-cta{background:var(--yellow);color:var(--ink)}
 .option-card.best .option-cta:hover{box-shadow:0 12px 28px rgba(255,230,0,0.45)}
 
+/* 6개월 무이자 할부 — 가격 카드 인서트 */
+.installment-line{
+  margin-top:10px;
+  padding:11px 14px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.installment-line .ins-tag{
+  font-size:11px;
+  font-weight:800;
+  color:var(--brand-cyan-soft);
+  letter-spacing:0.04em;
+}
+.installment-line .ins-amount{
+  font-size:13px;
+  color:rgba(255,255,255,0.7);
+  letter-spacing:-0.01em;
+}
+.installment-line .ins-amount strong{
+  color:#fff;
+  font-weight:800;
+  font-size:15px;
+  letter-spacing:-0.015em;
+}
+.installment-line .ins-amount small{
+  font-size:11px;
+  color:rgba(255,255,255,0.5);
+  font-weight:600;
+  margin-left:2px;
+}
+.installment-line.best{
+  background:rgba(255,230,0,0.06);
+  border-color:rgba(255,230,0,0.25);
+}
+.installment-line.best .ins-tag{color:var(--yellow)}
+.installment-line.best .ins-amount strong{color:var(--yellow)}
+
+/* 손실회피 메시지 */
+.loss-aversion{
+  margin-top:10px;
+  padding:11px 14px;
+  background:linear-gradient(135deg,rgba(255,34,68,0.12),rgba(204,0,51,0.08));
+  border:1px solid rgba(255,34,68,0.3);
+  border-radius:10px;
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+}
+.loss-aversion .la-icon{
+  font-size:14px;
+  flex-shrink:0;
+  margin-top:1px;
+}
+.loss-aversion .la-text{
+  font-size:12.5px;
+  line-height:1.55;
+  color:rgba(255,255,255,0.88);
+  letter-spacing:-0.005em;
+}
+.loss-aversion .la-text strong{color:#ffaaba;font-weight:800}
+.loss-aversion .la-text .la-em{
+  color:#fff;
+  background:linear-gradient(180deg,transparent 55%,rgba(255,34,68,0.4) 55%);
+  padding:0 2px;
+}
+@media(max-width:768px){
+  .installment-line{padding:10px 12px;gap:8px}
+  .installment-line .ins-amount strong{font-size:14px}
+  .loss-aversion{padding:10px 12px}
+  .loss-aversion .la-text{font-size:12px;line-height:1.5}
+}
+
+/* 중간 CTA · 무료 0주차 강의 — 페이지 곳곳에 배치 */
+.mid-cta{
+  margin-top:48px;
+  padding:32px 36px;
+  background:linear-gradient(135deg,rgba(204,0,0,0.18) 0%,rgba(96,32,255,0.18) 100%);
+  border:1px solid rgba(204,0,0,0.4);
+  border-radius:var(--radius-lg);
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:28px;
+  position:relative;
+  overflow:hidden;
+}
+.mid-cta::before{
+  content:'';
+  position:absolute;
+  top:-30%;right:-10%;
+  width:50%;height:160%;
+  background:radial-gradient(circle,rgba(204,0,0,0.25),transparent 60%);
+  filter:blur(40px);
+  pointer-events:none;
+}
+.mid-cta-text{position:relative;z-index:1}
+.mid-cta-eyebrow{
+  font-size:11px;
+  font-weight:800;
+  color:var(--yellow);
+  letter-spacing:0.15em;
+  margin-bottom:8px;
+}
+.mid-cta-title{
+  font-size:clamp(18px,2.2vw,24px);
+  font-weight:800;
+  color:#fff;
+  letter-spacing:-0.018em;
+  line-height:1.35;
+}
+.mid-cta.light .mid-cta-title{color:var(--ink)}
+.mid-cta.light{
+  background:linear-gradient(135deg,rgba(204,0,0,0.08) 0%,rgba(96,32,255,0.08) 100%);
+  border:1px solid rgba(204,0,0,0.25);
+}
+.mid-cta.light .mid-cta-eyebrow{color:#cc0033}
+.mid-cta-btn{
+  position:relative;z-index:1;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:16px 28px;
+  background:linear-gradient(135deg,#cc0000,#990000);
+  color:#fff;
+  border-radius:999px;
+  font-size:15px;
+  font-weight:800;
+  letter-spacing:-0.01em;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(204,0,0,0.4);
+  transition:transform .2s, box-shadow .2s;
+}
+.mid-cta-btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(204,0,0,0.5)}
+.mid-cta-sub{
+  grid-column:1 / -1;
+  font-size:12px;
+  color:rgba(255,255,255,0.6);
+  letter-spacing:-0.005em;
+  line-height:1.55;
+  position:relative;z-index:1;
+}
+.mid-cta.light .mid-cta-sub{color:var(--ink-3)}
+@media(max-width:768px){
+  .mid-cta{padding:24px 22px;grid-template-columns:1fr;gap:18px;margin-top:36px}
+  .mid-cta-btn{width:100%;justify-content:center;padding:15px 22px;font-size:14px}
+  .mid-cta-title{font-size:17px;line-height:1.4}
+}
+
 /* ============ DISCOUNT COUPON CARDS ============ */
 .discount-grid{
   display:grid;
@@ -2776,6 +2930,20 @@ footer{
   section[id="options"] .wrap > div[style*="padding:44px 40px"]{padding:28px 20px !important;border-radius:22px !important;margin-top:36px !important}
   section[id="options"] .wrap > div[style*="padding:44px 40px"] h3{font-size:22px !important;line-height:1.3 !important;margin-bottom:18px !important}
 }
+
+/* BENEFIT 03 · 팟캐스트 출연 — 모바일 세로형 */
+@media(max-width:860px){
+  .podcast-grid{grid-template-columns:1fr !important;gap:24px !important}
+}
+@media(max-width:768px){
+  .podcast-grid{gap:20px !important}
+  /* 외곽 패딩 압축 */
+  #post-grad .wrap div[style*="background:linear-gradient(135deg,#240b65"][style*="padding:48px 40px"]{padding:32px 22px !important;border-radius:22px !important}
+  .podcast-grid h3{font-size:22px !important;line-height:1.3 !important}
+  .podcast-grid p{font-size:14px !important;line-height:1.7 !important}
+  .podcast-grid > div:last-child{order:2}
+  .podcast-grid > div:first-child{order:1}
+}
 </style>
 </head>
 <body>
@@ -2799,7 +2967,6 @@ footer{
       </svg>
       <span class="gen">4기</span>
     </div>
-    <a href="#options" class="nav-cta">🎁 옵션 보기 · -10만원</a>
   </div>
 </nav>
 
@@ -2842,15 +3009,35 @@ footer{
           <div class="price-warning">※ 얼리버드 1주일 한정 · 2·3기 쿠폰 / 골드 멤버십 중복 가능</div>
 
           <div style="margin-top:18px;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.15);display:flex;flex-direction:column;gap:8px">
-            <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,0.82)">
-              <span>🌱 Basic</span><strong style="color:var(--yellow)">389,000원</strong>
+            <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,0.82);gap:8px;flex-wrap:wrap">
+              <span>🌱 Basic</span>
+              <span style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;justify-content:flex-end">
+                <strong style="color:var(--yellow)">389,000원</strong>
+                <small style="font-size:11px;color:rgba(255,255,255,0.55);font-weight:600">6개월 · 월 64,800원</small>
+              </span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,0.82)">
-              <span>🎯 기획+Basic</span><strong style="color:var(--yellow)">478,000원</strong>
+            <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,0.82);gap:8px;flex-wrap:wrap">
+              <span>🎯 기획+Basic</span>
+              <span style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;justify-content:flex-end">
+                <strong style="color:var(--yellow)">478,000원</strong>
+                <small style="font-size:11px;color:rgba(255,255,255,0.55);font-weight:600">6개월 · 월 79,600원</small>
+              </span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,0.95);background:rgba(255,230,0,0.1);padding:7px 10px;margin:0 -10px;border-radius:8px">
-              <span>🔥 풀 패키지 <span style="font-size:10px;background:var(--yellow);color:var(--ink);padding:2px 7px;border-radius:4px;margin-left:4px;font-weight:800;letter-spacing:0.04em">BEST</span></span><strong style="color:var(--yellow);font-size:14px">589,000원</strong>
+            <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,0.95);background:rgba(255,230,0,0.1);padding:7px 10px;margin:0 -10px;border-radius:8px;gap:8px;flex-wrap:wrap">
+              <span>🔥 풀 패키지 <span style="font-size:10px;background:var(--yellow);color:var(--ink);padding:2px 7px;border-radius:4px;margin-left:4px;font-weight:800;letter-spacing:0.04em">BEST</span></span>
+              <span style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;justify-content:flex-end">
+                <strong style="color:var(--yellow);font-size:14px">589,000원</strong>
+                <small style="font-size:11px;color:rgba(255,255,255,0.7);font-weight:700">6개월 · 월 98,100원</small>
+              </span>
             </div>
+          </div>
+
+          <!-- 손실회피 -->
+          <div style="margin-top:14px;padding:11px 13px;background:linear-gradient(135deg,rgba(255,34,68,0.16),rgba(204,0,51,0.10));border:1px solid rgba(255,34,68,0.35);border-radius:10px;display:flex;align-items:flex-start;gap:9px">
+            <span style="font-size:14px;flex-shrink:0;margin-top:1px">⏳</span>
+            <span style="font-size:12px;line-height:1.55;color:rgba(255,255,255,0.92);letter-spacing:-0.005em">
+              <strong style="color:#ffaaba;font-weight:800">6월 12일 자정</strong>이 지나면, <strong style="color:#fff;background:linear-gradient(180deg,transparent 55%,rgba(255,34,68,0.4) 55%);padding:0 2px">100,000원</strong>의 얼리버드 혜택이 사라집니다.
+            </span>
           </div>
 
           <div class="badge-row">
@@ -2860,8 +3047,9 @@ footer{
         </div>
         <div class="cta-row" style="margin-top:24px">
           <a href="#options" class="btn btn-primary" style="flex:1">3가지 옵션 비교하기 →</a>
-          <a href="#w0" class="btn btn-ghost" style="flex:1">W0 무료 먼저 보기</a>
+          <a href="https://www.youtube.com/@AInspire_kr" target="_blank" rel="noopener" class="btn btn-ghost" style="flex:1">무료 0주차 강의 보러가기 →</a>
         </div>
+        <p style="margin-top:12px;font-size:12px;color:rgba(255,255,255,0.55);line-height:1.55;text-align:center">※ 5월 29일 AInspire 유튜브 채널 (@AInspire_kr)에서 무료 공개 · 이후 녹화본 상시 시청 가능</p>
       </div>
     </div>
   </div>
@@ -2968,15 +3156,25 @@ footer{
     <style>@media(max-width:900px){.why-grid{grid-template-columns:1fr !important}}</style>
 
     <!-- 마무리 한 줄 -->
-    <div style="margin-top:48px;padding:36px 40px;background:linear-gradient(135deg,rgba(96,32,255,0.08),rgba(0,180,216,0.08));border:1px solid var(--purple-200,#d4bfff);border-radius:var(--radius-lg);text-align:center">
+    <div style="margin-top:48px;padding:36px 40px;background:linear-gradient(135deg,rgba(96,32,255,0.08),rgba(0,180,216,0.08));border:1px solid var(--purple-200,#d4bfff);border-radius:var(--radius-lg);text-align:center" class="summary-oneline">
       <p style="font-size:clamp(17px,2vw,22px);font-weight:700;color:var(--ink);line-height:1.6;letter-spacing:-0.015em">
         한마디로 정리하면<br>
         <strong style="background:var(--brand-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;font-weight:900;font-size:1.1em;display:inline-block;margin-top:8px">
-          AI 영상 제작자가 '툴을 클릭하는 사람'에서<br>
-          '결과를 판단하고 디렉팅하는 사람'으로 이동하게 만드는 강의
+          <span class="oneline-row">AI 영상 제작자가</span>
+          <span class="oneline-row">'툴을 클릭하는 사람'에서</span>
+          <span class="oneline-row">'결과를 판단하고 디렉팅하는 사람'</span>
+          <span class="oneline-row">으로 이동하게 만드는 강의</span>
         </strong>
       </p>
     </div>
+    <style>
+      .summary-oneline .oneline-row{display:inline}
+      @media(max-width:768px){
+        .summary-oneline .oneline-row{display:block;line-height:1.45;margin-bottom:2px}
+        .summary-oneline p{font-size:16px !important;line-height:1.55 !important}
+        .summary-oneline{padding:28px 22px !important}
+      }
+    </style>
   </div>
 </section>
 
@@ -3094,15 +3292,15 @@ footer{
           </ul>
         </div>
         <div class="cta-row">
-          <a href="https://www.youtube.com/@AInspire_kr" target="_blank" rel="noopener" class="btn btn-purple" style="background:linear-gradient(135deg,#cc0000,#990000);box-shadow:0 12px 32px rgba(204,0,0,0.35)">
+          <a href="https://www.youtube.com/@AInspire_kr" target="_blank" rel="noopener" class="btn btn-purple w0-cta" style="background:linear-gradient(135deg,#cc0000,#990000);box-shadow:0 12px 32px rgba(204,0,0,0.35)">
             <svg width="22" height="16" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
               <rect width="28" height="20" rx="4" fill="#fff"/>
               <path d="M11.5 6L17 10L11.5 14V6Z" fill="#cc0000"/>
             </svg>
-            5월 29일 · AInspire 유튜브에서 무료 공개 →
+            <span>무료 0주차 강의 보러가기 →</span>
           </a>
         </div>
-        <p style="font-size:13px;color:var(--ink-3);margin-top:14px">※ <strong style="color:#cc0033">5월 29일</strong> AInspire 유튜브 채널 (@AInspire_kr)에서 무료 공개 · 이후 녹화본 상시 시청 가능</p>
+        <p style="font-size:13px;color:var(--ink-3);margin-top:14px;line-height:1.65">※ <strong style="color:#cc0033">5월 29일</strong> AInspire 유튜브 채널 (@AInspire_kr)에서 무료 공개 · 이후 녹화본 상시 시청 가능</p>
       </div>
       <div class="w0-visual">
         <div class="terminal">
@@ -3506,6 +3704,22 @@ footer{
         <span class="yellow">이미 글로벌 영화제 트로피를 들고 있습니다.</span>
       </p>
     </div>
+
+    <!-- 중간 CTA · 무료 0주차 강의 -->
+    <div class="mid-cta">
+      <div class="mid-cta-text">
+        <div class="mid-cta-eyebrow">🎬 첫 발은 무료입니다</div>
+        <div class="mid-cta-title">결제 전에, 먼저 보고 판단하세요.</div>
+      </div>
+      <a href="https://www.youtube.com/@AInspire_kr" target="_blank" rel="noopener" class="mid-cta-btn">
+        <svg width="20" height="14" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+          <rect width="28" height="20" rx="4" fill="#fff"/>
+          <path d="M11.5 6L17 10L11.5 14V6Z" fill="#cc0000"/>
+        </svg>
+        무료 0주차 강의 보러가기 →
+      </a>
+      <div class="mid-cta-sub">※ 5월 29일 AInspire 유튜브 채널 (@AInspire_kr)에서 무료 공개 · 이후 녹화본 상시 시청 가능</div>
+    </div>
   </div>
 </section>
 
@@ -3624,6 +3838,22 @@ footer{
           fraverse.ai를 직접 구축한 경험으로 *작동하는 시스템*만 전달합니다.
         </div>
       </div>
+    </div>
+
+    <!-- 중간 CTA · 무료 0주차 강의 (강사 프로필 직후) -->
+    <div class="mid-cta light">
+      <div class="mid-cta-text">
+        <div class="mid-cta-eyebrow">🎬 21년 실무 노하우, 무료 미리 듣기</div>
+        <div class="mid-cta-title">강의 분위기·강사 톤·실습 방식을 먼저 확인해보세요.</div>
+      </div>
+      <a href="https://www.youtube.com/@AInspire_kr" target="_blank" rel="noopener" class="mid-cta-btn">
+        <svg width="20" height="14" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+          <rect width="28" height="20" rx="4" fill="#fff"/>
+          <path d="M11.5 6L17 10L11.5 14V6Z" fill="#cc0000"/>
+        </svg>
+        무료 0주차 강의 보러가기 →
+      </a>
+      <div class="mid-cta-sub">※ 5월 29일 AInspire 유튜브 채널 (@AInspire_kr)에서 무료 공개 · 이후 녹화본 상시 시청 가능</div>
     </div>
   </div>
 </section>
@@ -4892,6 +5122,22 @@ footer{
     <p class="student-note" style="margin-top:48px">
       ※ AInspire 후기 게시판에서 <strong>370건 이상의 실제 후기</strong>를 누구나 확인하실 수 있습니다.
     </p>
+
+    <!-- 중간 CTA · 무료 0주차 강의 (후기 직후) -->
+    <div class="mid-cta light">
+      <div class="mid-cta-text">
+        <div class="mid-cta-eyebrow">🎬 후기만 보지 마세요, 직접 체험하세요</div>
+        <div class="mid-cta-title">370건의 후기 그 다음 단계 — 강의를 미리 들어보세요.</div>
+      </div>
+      <a href="https://www.youtube.com/@AInspire_kr" target="_blank" rel="noopener" class="mid-cta-btn">
+        <svg width="20" height="14" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+          <rect width="28" height="20" rx="4" fill="#fff"/>
+          <path d="M11.5 6L17 10L11.5 14V6Z" fill="#cc0000"/>
+        </svg>
+        무료 0주차 강의 보러가기 →
+      </a>
+      <div class="mid-cta-sub">※ 5월 29일 AInspire 유튜브 채널 (@AInspire_kr)에서 무료 공개 · 이후 녹화본 상시 시청 가능</div>
+    </div>
   </div>
 </section>
 
@@ -5104,8 +5350,16 @@ footer{
         <div class="option-tag">🌱 4기 첫 시작 · 가장 부담 없는 진입</div>
         <div class="option-strike">정가 489,000원</div>
         <div class="option-price">389,000<small>원</small></div>
+        <div class="installment-line">
+          <span class="ins-tag">💳 6개월 무이자</span>
+          <span class="ins-amount"><strong>월 64,800원</strong> <small>/ 6개월</small></span>
+        </div>
         <div class="option-early">
           <span>사전 예약 즉시할인</span><strong>-100,000원</strong>
+        </div>
+        <div class="loss-aversion">
+          <span class="la-icon">⏳</span>
+          <span class="la-text"><strong>6월 12일 자정</strong>이 지나면, <strong class="la-em">100,000원</strong>의 얼리버드 혜택이 사라집니다.</span>
         </div>
         <ul class="option-includes">
           <li>4기 정규 8주 + W9 시크릿 강의 전체</li>
@@ -5128,8 +5382,16 @@ footer{
         <div class="option-tag">🎯 AI 툴 익숙해도 *영상 제작·기획*에 한계 느낀다면</div>
         <div class="option-strike">정가 578,000원 (Basic 489,000 + 기획 89,000)</div>
         <div class="option-price">478,000<small>원</small></div>
+        <div class="installment-line">
+          <span class="ins-tag">💳 6개월 무이자</span>
+          <span class="ins-amount"><strong>월 79,600원</strong> <small>/ 6개월</small></span>
+        </div>
         <div class="option-early">
           <span>사전 예약 즉시할인</span><strong>-100,000원</strong>
+        </div>
+        <div class="loss-aversion">
+          <span class="la-icon">⏳</span>
+          <span class="la-text"><strong>6월 12일 자정</strong>이 지나면, <strong class="la-em">100,000원</strong>의 얼리버드 혜택이 사라집니다.</span>
         </div>
         <div class="option-saving">2·3기 기획 강의 통째로 +89,000원에 추가</div>
         <ul class="option-includes">
@@ -5153,8 +5415,16 @@ footer{
         <div class="option-tag">🔥 모든 커리큘럼 학습 · 지금 시작해도 따라잡기 가능</div>
         <div class="option-strike">정가 합계 1,467,000원</div>
         <div class="option-price">589,000<small>원</small></div>
+        <div class="installment-line best">
+          <span class="ins-tag">💳 6개월 무이자</span>
+          <span class="ins-amount"><strong>월 98,100원</strong> <small>/ 6개월</small></span>
+        </div>
         <div class="option-early">
           <span>사전 예약 즉시할인</span><strong>-100,000원</strong>
+        </div>
+        <div class="loss-aversion">
+          <span class="la-icon">⏳</span>
+          <span class="la-text"><strong>6월 12일 자정</strong>이 지나면, <strong class="la-em">100,000원</strong>의 얼리버드 혜택이 사라집니다.</span>
         </div>
         <div class="option-saving">총 878,000원 절감 · 정가 대비 약 60% 할인</div>
         <ul class="option-includes">
@@ -5652,10 +5922,11 @@ Basic 결제 후 *기획+Basic* 또는 *풀 패키지*로 업그레이드를 원
 
     <div class="cta-row center" style="margin-top:48px">
       <a href="#options" class="btn btn-primary btn-lg">옵션 자세히 비교하기 →</a>
-      <a href="#w0" class="btn btn-ghost btn-lg">W0 무료 부트캠프 신청</a>
+      <a href="https://www.youtube.com/@AInspire_kr" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">무료 0주차 강의 보러가기 →</a>
     </div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:14px;line-height:1.65;text-align:center">※ 5월 29일 AInspire 유튜브 채널 (@AInspire_kr)에서 무료 공개 · 이후 녹화본 상시 시청 가능</p>
 
-    <p style="font-size:13px;color:rgba(255,255,255,0.45);margin-top:36px;line-height:1.7">
+    <p style="font-size:13px;color:rgba(255,255,255,0.45);margin-top:24px;line-height:1.7">
       ※ 사전 예약 100,000원 할인은 오픈 후 1주일 한정입니다.<br>
       ※ 2·3기 수강생 쿠폰·골드 멤버십 쿠폰과 모두 중복 적용 가능합니다.
     </p>
