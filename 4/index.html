@@ -6010,5 +6010,20 @@ Basic 결제 후 *기획+Basic* 또는 *풀 패키지*로 업그레이드를 원
   <a href="#options" class="btn" style="background:var(--brand-grad);color:#fff;padding:14px 24px;font-size:14px;font-weight:800;box-shadow:0 8px 24px rgba(96,32,255,0.4)">옵션 보기</a>
 </div>
 
+<script>
+(function () {
+  var TARGET = 'https://www.ainspire.co.kr';
+  function sendHeight() {
+    window.parent.postMessage(document.body.scrollHeight, TARGET);
+  }
+  window.addEventListener('load', sendHeight);
+  if (window.ResizeObserver) {
+    new ResizeObserver(sendHeight).observe(document.body);
+  }
+  document.addEventListener('toggle', sendHeight, true);
+  window.addEventListener('resize', sendHeight);
+})();
+</script>
+
 </body>
 </html>
