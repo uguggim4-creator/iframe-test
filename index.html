@@ -2736,7 +2736,7 @@ footer{
 
 .curric-week-header{
   display:grid;
-  grid-template-columns:90px 1fr auto;
+  grid-template-columns:90px 1fr;
   align-items:center;
   gap:24px;
   padding:28px 32px;
@@ -2745,7 +2745,6 @@ footer{
 .curric-week-card.bonus .curric-week-header{border-bottom-color:rgba(255,255,255,0.1)}
 @media(max-width:760px){
   .curric-week-header{grid-template-columns:60px 1fr;padding:22px 22px;gap:14px}
-  .curric-week-badges{grid-column:1/-1;margin-top:6px;justify-content:flex-start !important}
 }
 .curric-week-num{
   font-size:32px;
@@ -2774,34 +2773,6 @@ footer{
   letter-spacing:-0.005em;
   line-height:1.5;
 }
-.curric-week-badges{
-  display:flex;
-  gap:6px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
-  align-items:center;
-  max-width:280px;
-}
-
-.curric-badge{
-  display:inline-block;
-  font-size:10px;
-  font-weight:800;
-  padding:5px 11px;
-  border-radius:999px;
-  background:var(--purple-100);
-  color:var(--purple-600);
-  letter-spacing:0.04em;
-  white-space:nowrap;
-}
-.curric-badge.demo{background:#ffe6f5;color:#a8004f}
-.curric-badge.milestone{background:var(--yellow);color:var(--ink)}
-.curric-badge.bonus-tag{background:var(--purple-500);color:var(--white)}
-.curric-badge.director{background:#1a0a3d;color:var(--yellow)}
-.curric-badge.pivot{background:#fff0d6;color:#9d5500}
-.curric-badge.warning{background:#ffe5e5;color:#9d0000}
-.curric-badge.timer{background:#e5f5ff;color:#005a9d}
-
 .curric-week-body{
   padding:24px 32px;
   display:grid;
@@ -4130,9 +4101,6 @@ footer{
             <h3 class="curric-week-title">라이브 OT — "AI 영상 제작 환경을 왜 배우는가"</h3>
             <p class="curric-week-catch">심보건 담당 · 본 강의 시작 전 라이브 OT · 무료 공개</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge bonus-tag">🎓 무료 공개</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4171,9 +4139,6 @@ footer{
           <div>
             <h3 class="curric-week-title">AI 영상 제작 환경 세팅</h3>
             <p class="curric-week-catch">김욱종 PD 담당 · 제작 환경 세팅 + 같은 사람을 10번 생성한다</p>
-          </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge">기반 세팅</span>
           </div>
         </div>
         <div class="curric-week-body">
@@ -4215,9 +4180,6 @@ footer{
           <div>
             <h3 class="curric-week-title">광고 대표 이미지 제작</h3>
             <p class="curric-week-catch">"AI가 못 그리는 건 포토샵이 합치고, 영상으로 넘긴다"</p>
-          </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge pivot">🔁 Pivot 마감</span>
           </div>
         </div>
         <div class="curric-week-body">
@@ -4262,10 +4224,6 @@ footer{
             <h3 class="curric-week-title">짧은 광고 1편 제작</h3>
             <p class="curric-week-catch">"화장품·자동차·F&B·금융까지 — 한 주에 분야별 결을 잡는다"</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge demo">🎬 시연: 화장품·자동차</span>
-            <span class="curric-badge timer">⏱ 시간측정 첫 회차</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4301,10 +4259,6 @@ footer{
           <div>
             <h3 class="curric-week-title">광고 영상 3편 캠페인 제작</h3>
             <p class="curric-week-catch">"한 컷이 아니라 캠페인 한 세트를 하루 만에 · 4기의 시그니처"</p>
-          </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge milestone">🏆 수료 자격 확정</span>
-            <span class="curric-badge demo">🎬 시연: 패션 캠페인</span>
           </div>
         </div>
         <div class="curric-week-body">
@@ -4345,9 +4299,6 @@ footer{
             <h3 class="curric-week-title">스토리가 있는 영상 기획</h3>
             <p class="curric-week-catch">"30초 광고에서 3분 단편으로 — W1 세계관 확장"</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge director">✨ Director 신청</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4385,9 +4336,6 @@ footer{
             <h3 class="curric-week-title">대사와 캐릭터가 있는 단편 완성</h3>
             <p class="curric-week-catch">"대사 있는 사람이 둘 이상 나오는 영상까지"</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge demo">🎬 시연: 드라마 대사</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4424,10 +4372,6 @@ footer{
           <div>
             <h3 class="curric-week-title">영화 같은 트레일러와 VFX 제작</h3>
             <p class="curric-week-catch">"첫 오리지널 시리즈 트레일러 + 기존 광고를 CG로 1/10 비용 리메이크"</p>
-          </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge director">✨ Director 5~7분</span>
-            <span class="curric-badge warning">🚫 신작 금지</span>
           </div>
         </div>
         <div class="curric-week-body">
@@ -4469,9 +4413,6 @@ footer{
             <h3 class="curric-week-title">내 작품을 포트폴리오로</h3>
             <p class="curric-week-catch">"8주 결과물을 영업 자산으로 + 라이브 쇼케이스"</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge milestone">🎓 라이브 쇼케이스</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4511,9 +4452,6 @@ footer{
           <div>
             <h3 class="curric-week-title" style="color:#fff">★ 시크릿 강의 — 4기 출시 시점 최신 플랫폼·프로세스 즉시 적용</h3>
             <p class="curric-week-catch" style="color:var(--brand-cyan-soft)">"매 기수마다 그 시점 최신 AI 영상 도구·기법을 그대로 강의에 흡수"</p>
-          </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge" style="background:var(--brand-cyan);color:#fff">★ SECRET</span>
           </div>
         </div>
         <div class="curric-week-body">
