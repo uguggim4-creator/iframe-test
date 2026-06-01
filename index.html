@@ -2743,7 +2743,7 @@ footer{
 
 .curric-week-header{
   display:grid;
-  grid-template-columns:90px 1fr auto;
+  grid-template-columns:90px 1fr;
   align-items:center;
   gap:24px;
   padding:28px 32px;
@@ -2752,7 +2752,6 @@ footer{
 .curric-week-card.bonus .curric-week-header{border-bottom-color:rgba(255,255,255,0.1)}
 @media(max-width:760px){
   .curric-week-header{grid-template-columns:60px 1fr;padding:22px 22px;gap:14px}
-  .curric-week-badges{grid-column:1/-1;margin-top:6px;justify-content:flex-start !important}
 }
 .curric-week-num{
   font-size:32px;
@@ -2781,34 +2780,6 @@ footer{
   letter-spacing:-0.005em;
   line-height:1.5;
 }
-.curric-week-badges{
-  display:flex;
-  gap:6px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
-  align-items:center;
-  max-width:280px;
-}
-
-.curric-badge{
-  display:inline-block;
-  font-size:10px;
-  font-weight:800;
-  padding:5px 11px;
-  border-radius:999px;
-  background:var(--purple-100);
-  color:var(--purple-600);
-  letter-spacing:0.04em;
-  white-space:nowrap;
-}
-.curric-badge.demo{background:#ffe6f5;color:#a8004f}
-.curric-badge.milestone{background:var(--yellow);color:var(--ink)}
-.curric-badge.bonus-tag{background:var(--purple-500);color:var(--white)}
-.curric-badge.director{background:#1a0a3d;color:var(--yellow)}
-.curric-badge.pivot{background:#fff0d6;color:#9d5500}
-.curric-badge.warning{background:#ffe5e5;color:#9d0000}
-.curric-badge.timer{background:#e5f5ff;color:#005a9d}
-
 .curric-week-body{
   padding:24px 32px;
   display:grid;
@@ -3033,8 +3004,8 @@ footer{
             <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:rgba(255,255,255,0.95);background:rgba(255,230,0,0.1);padding:7px 10px;margin:0 -10px;border-radius:8px;gap:8px;flex-wrap:wrap">
               <span>🔥 풀 패키지 <span style="font-size:10px;background:var(--yellow);color:var(--ink);padding:2px 7px;border-radius:4px;margin-left:4px;font-weight:800;letter-spacing:0.04em">BEST</span></span>
               <span style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;justify-content:flex-end">
-                <strong style="color:var(--yellow);font-size:14px">589,000원</strong>
-                <small style="font-size:11px;color:rgba(255,255,255,0.7);font-weight:700">6개월 · 월 98,100원</small>
+                <strong style="color:var(--yellow);font-size:14px">586,800원</strong>
+                <small style="font-size:11px;color:rgba(255,255,255,0.7);font-weight:700">6개월 · 월 97,800원</small>
               </span>
             </div>
           </div>
@@ -3203,7 +3174,7 @@ footer{
     <div style="text-align:center;margin-bottom:48px">
       <div style="display:inline-flex;align-items:center;gap:12px;padding:18px 32px;background:linear-gradient(135deg,#ff2244,#cc0033);color:#fff;border-radius:999px;font-size:clamp(15px,1.8vw,18px);font-weight:800;letter-spacing:-0.01em;box-shadow:0 16px 40px rgba(255,34,68,0.4)">
         <span style="font-size:22px">⏰</span>
-        <span>사전예약·얼리버드 적용 기간 — <strong style="color:var(--yellow);font-size:1.1em">5월 28일 ~ 6월 12일</strong><span style="font-size:0.78em;opacity:0.6;font-weight:400;margin-left:10px">· 이후 정상가</span></span>
+        <span>사전예약·얼리버드 적용 기간 — <strong style="color:var(--yellow);font-size:1.1em">6월 1일 ~ 6월 12일</strong><span style="font-size:0.78em;opacity:0.6;font-weight:400;margin-left:10px">· 이후 정상가</span></span>
       </div>
     </div>
 
@@ -3274,7 +3245,7 @@ footer{
           <li>VOD 360일 시청</li>
           <li>10가지 혜택 패키지 제공</li>
         </ul>
-        <a href="LINK_BASIC_PRODUCT" class="option-cta">Basic 결제 페이지로 →</a>
+        <a href="https://ainspire.imweb.me/class/?idx=16" class="option-cta">Basic 결제 페이지로 →</a>
       </div>
 
       <div class="option-card featured">
@@ -3291,7 +3262,7 @@ footer{
           <li>2·3기 기획 강의 통합본 추가</li>
           <li>광고·스토리텔링·시네마 호흡 보강</li>
         </ul>
-        <a href="LINK_PLANNING_PRODUCT" class="option-cta">기획+Basic 결제 페이지로 →</a>
+        <a href="https://ainspire.imweb.me/class/?idx=17" class="option-cta">기획+Basic 결제 페이지로 →</a>
       </div>
 
       <div class="option-card best">
@@ -3299,17 +3270,17 @@ footer{
         <div class="option-name">풀 패키지</div>
         <div class="option-tag">2·3·4기 전체 학습</div>
         <div class="option-strike">정가 합계 1,467,000원</div>
-        <div class="option-price">589,000<small>원</small></div>
+        <div class="option-price">586,800<small>원</small></div>
         <div class="installment-line best">
           <span class="ins-tag">6개월 무이자</span>
-          <span class="ins-amount"><strong>월 98,100원</strong></span>
+          <span class="ins-amount"><strong>월 97,800원</strong></span>
         </div>
         <ul class="option-includes">
           <li>4기 정규 과정 + 2기 전체 + 3기 전체</li>
           <li>누적 100시간+ 학습 자산</li>
           <li>우수작 쇼릴 등재·협력사 추천 최우선</li>
         </ul>
-        <a href="LINK_FULL_PRODUCT" class="option-cta">풀 패키지 결제 페이지로 →</a>
+        <a href="https://ainspire.imweb.me/class/?idx=18" class="option-cta">풀 패키지 결제 페이지로 →</a>
       </div>
     </div>
 
@@ -3389,12 +3360,16 @@ footer{
       </div>
       <div class="w0-visual">
         <div class="terminal">
-          <span class="comment"># W0 무료 라이브 OT — 배우는 내용</span><br><br>
-          <span class="prompt">1단계</span> Claude Code 설치 · 환경 세팅<br>
-          <span class="ok">✓</span> 윈도우·맥 환경 완전 정복<br><br>
-          <span class="prompt">2단계</span> 첫 번째 자동화 직접 실행<br>
-          <span class="ok">✓</span> 30분 수동 작업 → 4분으로<br><br>
-          <span class="comment"># 한 번 완주하면 진입장벽 해결.</span>
+          <span class="comment"># W0 무료 라이브 OT — OT 스티커 자료</span><br><br>
+          <span class="prompt">OT</span> AI 에이전트 비교<br>
+          <span class="ok">✓</span> Claude · Codex · Antigravity · VSCode Copilot<br><br>
+          <span class="prompt">OT</span> Claude Code 시작 가이드<br>
+          <span class="ok">✓</span> 설치 · 권한 모드 · CLAUDE.md · Skills · Hooks<br><br>
+          <span class="prompt">OT</span> AI 영상 파이프라인<br>
+          <span class="ok">✓</span> Codex 자동화 · Claude Routines · Higgsfield MCP<br><br>
+          <span class="prompt">+</span> 왕초보 가이드<br>
+          <span class="ok">✓</span> AI 영상 제작 첫 걸음 · 핵심 도구 · 실수 TOP 5<br><br>
+          <span class="comment"># OT 표시 자료 + 왕초보 가이드로 W1 진입 준비.</span>
         </div>
       </div>
     </div>
@@ -3693,12 +3668,12 @@ footer{
           </ul>
         </div>
 
-        <!-- 황세준 (율파파) -->
+        <!-- 황세준 (JUN) -->
         <div class="award-card">
           <span class="award-card-crown">👑</span>
           <div class="award-card-head">
             <span class="award-card-name">황세준</span>
-            <span class="award-card-tag">율파파</span>
+            <span class="award-card-tag">JUN</span>
           </div>
           <div class="award-card-work">작품 <em>THE BIN CHICKEN / 빈치킨</em></div>
           <ul class="award-card-list">
@@ -4010,6 +3985,10 @@ footer{
       <a href="https://www.youtube.com/watch?v=CS48Fx5q8iE" target="_blank" rel="noopener" class="showreel-card">
         <div class="showreel-thumb" style="background-image:url('https://i.ytimg.com/vi/CS48Fx5q8iE/maxresdefault.jpg')"></div>
         <div class="showreel-card-meta"><div class="showreel-card-tag">AI Short Film</div><div class="showreel-card-title">Yellow Ep02</div><div class="showreel-card-sub">AInspire Original Series</div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=YOOC7e5Brcg" target="_blank" rel="noopener" class="showreel-card">
+        <div class="showreel-thumb" style="background-image:url('https://i.ytimg.com/vi/YOOC7e5Brcg/maxresdefault.jpg')"></div>
+        <div class="showreel-card-meta"><div class="showreel-card-tag">Brand Film</div><div class="showreel-card-title">고도화된 AI 에이전트 워크플로우</div><div class="showreel-card-sub">AInspire Original</div></div>
       </a>
       <a href="https://www.youtube.com/watch?v=IL8gLvTAPvQ" target="_blank" rel="noopener" class="showreel-card">
         <div class="showreel-thumb" style="background-image:url('https://i.ytimg.com/vi/IL8gLvTAPvQ/maxresdefault.jpg')"></div>
@@ -4341,9 +4320,6 @@ footer{
             <h3 class="curric-week-title">라이브 OT — "왜 AI 영상제작 에이전트로 넘어가야 하는가"</h3>
             <p class="curric-week-catch">심보건 · 본 강의 시작 전 라이브 OT · 무료 공개</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge bonus-tag">🎓 무료 공개</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4383,10 +4359,6 @@ footer{
           <div>
             <h3 class="curric-week-title">AI 영상 제작 OS 세팅</h3>
             <p class="curric-week-catch">4기 입문 자료 기반 · 에이전트, 도구, 제작 파이프라인을 한 번에 세팅</p>
-          </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge">OS 세팅</span>
-            <span class="curric-badge demo">도구 실습</span>
           </div>
         </div>
         <div class="curric-week-body">
@@ -4428,9 +4400,6 @@ footer{
             <h3 class="curric-week-title">30초 광고 제작</h3>
             <p class="curric-week-catch">화장품 · F&amp;B · 스토리형 광고 제작</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge demo">🎬 광고 단편</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4468,9 +4437,6 @@ footer{
             <h3 class="curric-week-title">엘리베이터 광고 제작</h3>
             <p class="curric-week-catch">가상 엘리베이터 광고 만들기 · <strong style="color:#a07d00">4기의 시그니처</strong></p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge milestone">🏆 시그니처</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4505,9 +4471,6 @@ footer{
             <h3 class="curric-week-title">[퀄리티 업!] 이미지 &amp; 영상 수정 고도화 및 CG</h3>
             <p class="curric-week-catch">AI가 못 그리는 건 포토샵이, CG와 타이포그래피 고도화</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge">퀄리티 업</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4541,9 +4504,6 @@ footer{
           <div>
             <h3 class="curric-week-title">숏드라마 반자동화 에이전트 — 대사·캐릭터 단편 완성</h3>
             <p class="curric-week-catch">대사 있는 사람이 둘 이상 나오는 영상까지</p>
-          </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge demo">🎬 단편 완성</span>
           </div>
         </div>
         <div class="curric-week-body">
@@ -4580,9 +4540,6 @@ footer{
             <h3 class="curric-week-title">내 영화 트레일러 및 장편 제작</h3>
             <p class="curric-week-catch">첫 오리지널 시리즈 제작</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge director">✨ 오리지널 시리즈</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4616,9 +4573,6 @@ footer{
             <h3 class="curric-week-title">SNS에서 유행하는 바이럴 영상 만들기</h3>
             <p class="curric-week-catch">트렌드 대응형 · 수강생 요청에 맞춰 구성</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge">🔥 트렌드 대응</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
@@ -4650,28 +4604,21 @@ footer{
             <h3 class="curric-week-title">내 작품을 쇼릴 포트폴리오로</h3>
             <p class="curric-week-catch">showreel_ainspire 구조 기반 · 작품 데이터, 상세 페이지, 연락 동선까지 완성</p>
           </div>
-          <div class="curric-week-badges">
-            <span class="curric-badge milestone">🎓 라이브 쇼케이스</span>
-            <span class="curric-badge director">포트폴리오 사이트</span>
-          </div>
         </div>
         <div class="curric-week-body">
           <div class="curric-week-col">
             <h4>📚 다룰 내용</h4>
             <ul>
               <li>Next.js 포트폴리오 구조 이해 — 홈, Works, 작품 상세, About, Contact</li>
-              <li>풀스크린 히어로 캐러셀과 3열 Works 그리드로 작품 첫인상 만들기</li>
-              <li><strong>data/works.ts</strong> 방식으로 제목, 카테고리, 썸네일, YouTube ID, 설명 정리</li>
-              <li>작품 상세 페이지 구성 — 풀폭 영상 영역, 시네마틱 소개, 다음 작품 이동</li>
-              <li>도메인 · Vercel 배포 · SEO 기본값 · 연락처 폼까지 영업 동선 연결</li>
-              <li>대표작 3개 + 보조작 6개를 선별해 AInspire 쇼릴형 포트폴리오로 패키징</li>
+              <li>작품 상세 페이지 구성</li>
+              <li>도메인 · Vercel 배포 · SEO 기본값 · 연락처까지 연결</li>
             </ul>
           </div>
           <div class="curric-week-col">
             <h4>📦 체크</h4>
             <ul>
               <li>본인 이름 또는 브랜드명으로 된 포트폴리오 사이트</li>
-              <li>Works 목록에 들어갈 작품 데이터 9개 내외</li>
+              <li>Works 갤러리 전시</li>
               <li>히어로에 올릴 대표 쇼릴 3개</li>
               <li>Contact 페이지와 외부 채널 연결</li>
             </ul>
@@ -5440,7 +5387,7 @@ footer{
     </p>
     <div style="text-align:center;margin-bottom:48px">
       <div style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:linear-gradient(135deg,#ff2244,#cc0033);color:#fff;border-radius:999px;font-size:clamp(14px,1.6vw,17px);font-weight:800;letter-spacing:-0.01em;box-shadow:0 14px 38px rgba(255,34,68,0.4)">
-        ⏰ 사전예약·얼리버드 — <strong style="color:var(--yellow)">5월 28일 ~ 6월 12일</strong> · 이후 정상가 적용
+        ⏰ 사전예약·얼리버드 — <strong style="color:var(--yellow)">6월 1일 ~ 6월 12일</strong> · 이후 정상가 적용
       </div>
     </div>
     <p class="lead center" style="max-width:720px;margin:0 auto">
@@ -5504,7 +5451,7 @@ footer{
         🎁 사전 예약하면 옵션 관계없이 무조건 100,000원 할인
       </div>
       <div style="margin-top:14px;display:inline-flex;align-items:center;gap:10px;padding:10px 22px;background:linear-gradient(135deg,#ff2244,#cc0033);color:#fff;border-radius:999px;font-size:14px;font-weight:800;letter-spacing:-0.01em;box-shadow:0 10px 28px rgba(255,34,68,0.35)">
-        ⏰ 적용 기간 — <strong style="color:var(--yellow)">5월 28일 ~ 6월 12일</strong> · 이후 정상가
+        ⏰ 적용 기간 — <strong style="color:var(--yellow)">6월 1일 ~ 6월 12일</strong> · 이후 정상가
       </div>
     </div>
 
@@ -5581,7 +5528,7 @@ footer{
           <li>우수작 AInspire 쇼릴 등재 기회</li>
           <li>협력사·프로덕션 인재 추천 우선순위</li>
         </ul>
-        <a href="LINK_BASIC_PRODUCT" class="option-cta">Basic 결제 페이지로 →</a>
+        <a href="https://ainspire.imweb.me/class/?idx=16" class="option-cta">Basic 결제 페이지로 →</a>
       </div>
 
       <!-- 기획 + Basic -->
@@ -5614,7 +5561,7 @@ footer{
           <li>2·3·4기 오픈채팅방 영구 운영</li>
           <li>우수작 쇼릴 등재 + 협력사 추천 우선순위</li>
         </ul>
-        <a href="LINK_PLANNING_PRODUCT" class="option-cta">기획+Basic 결제 페이지로 →</a>
+        <a href="https://ainspire.imweb.me/class/?idx=17" class="option-cta">기획+Basic 결제 페이지로 →</a>
       </div>
 
       <!-- 풀 패키지 -->
@@ -5623,10 +5570,10 @@ footer{
         <div class="option-name">풀 패키지</div>
         <div class="option-tag">🔥 모든 커리큘럼 학습 · 지금 시작해도 따라잡기 가능</div>
         <div class="option-strike">정가 합계 1,467,000원</div>
-        <div class="option-price">589,000<small>원</small></div>
+        <div class="option-price">586,800<small>원</small></div>
         <div class="installment-line best">
           <span class="ins-tag">💳 6개월 무이자</span>
-          <span class="ins-amount"><strong>월 98,100원</strong> <small>/ 6개월</small></span>
+          <span class="ins-amount"><strong>월 97,800원</strong> <small>/ 6개월</small></span>
         </div>
         <div class="option-early">
           <span>사전 예약 즉시할인</span><strong>-100,000원</strong>
@@ -5647,7 +5594,7 @@ footer{
           <li>2·3·4기 오픈채팅방 영구 운영</li>
           <li><strong style="color:var(--yellow)">우수작 쇼릴 등재 + 협력사 추천 최우선</strong></li>
         </ul>
-        <a href="LINK_FULL_PRODUCT" class="option-cta">풀 패키지 결제 페이지로 →</a>
+        <a href="https://ainspire.imweb.me/class/?idx=18" class="option-cta">풀 패키지 결제 페이지로 →</a>
       </div>
 
     </div>
@@ -5730,8 +5677,8 @@ footer{
       <h3>⚠️ 가격·할인 정책 — 운영 검토가 완료된 항목 / 확인이 필요한 항목</h3>
       <ol>
         <li>
-          <strong>풀 패키지 할인율 표기</strong> — 2·3·4기 전체 정가 합계 1,467,000원 대비 풀 패키지 정가 689,000원은 약 53% 할인, 사전 예약가 589,000원은 약 60% 할인입니다.
-          <div class="reco">"1,467,000원 가치의 2·3·4기 전체 강의를 사전 예약 시 589,000원에 (약 60% 할인)"</div>
+          <strong>풀 패키지 할인율 표기</strong> — 2·3·4기 전체 정가 합계 1,467,000원 대비 풀 패키지 정가 686,800원은 약 53% 할인, 사전 예약가 586,800원은 약 60% 할인입니다.
+          <div class="reco">"1,467,000원 가치의 2·3·4기 전체 강의를 사전 예약 시 586,800원에 (약 60% 할인)"</div>
         </li>
         <li>
           <strong>기획강의 추가 옵션의 정가 구성</strong> — Basic 489,000원 + 기획 강의 89,000원 = <strong>합계 578,000원</strong>이 정가이며, 사전 예약 100,000원 할인 적용 시 478,000원에 구매하실 수 있습니다.
@@ -6080,7 +6027,7 @@ Basic 결제 후 *기획+Basic* 또는 *풀 패키지*로 업그레이드를 원
         🎁 사전 예약 = 옵션 관계없이 무조건 100,000원 할인
       </div>
       <div style="display:inline-flex;align-items:center;padding:12px 28px;background:linear-gradient(135deg,#a8425a,#7d2f42);color:#fff;border-radius:999px;font-size:15px;font-weight:700;letter-spacing:-0.01em;box-shadow:0 8px 22px rgba(168,66,90,0.22)">
-        ⏰ 5월 28일 ~ 6월 12일 한정
+        ⏰ 6월 1일 ~ 6월 12일 한정
       </div>
     </div>
 
@@ -6093,30 +6040,30 @@ Basic 결제 후 *기획+Basic* 또는 *풀 패키지*로 업그레이드를 원
       AI 영상제작의 <strong style="color:var(--yellow)">시간과 비용</strong>을 세이브해드립니다.
     </p>
     <p style="font-size:14px;color:rgba(255,255,255,0.6);max-width:600px;margin:0 auto 48px;line-height:1.7">
-      지금이 가장 저렴합니다. <strong style="color:var(--yellow)">사전예약·얼리버드는 5월 28일 ~ 6월 12일까지 (이후 정상가)</strong>.<br>
+      지금이 가장 저렴합니다. <strong style="color:var(--yellow)">사전예약·얼리버드는 6월 1일 ~ 6월 12일까지 (이후 정상가)</strong>.<br>
       3가지 옵션 중 본인에게 맞는 깊이를 선택하세요. <strong style="color:rgba(255,255,255,0.9)">모든 옵션</strong>에 W0 라이브 OT와 10가지 혜택 패키지가 동일 제공됩니다.
     </p>
 
     <div class="final-cta-grid">
-      <a href="LINK_BASIC_PRODUCT" class="final-option-btn">
+      <a href="https://ainspire.imweb.me/class/?idx=16" class="final-option-btn">
         <div style="font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:0.1em;margin-bottom:6px;font-weight:700">🌱 BASIC</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:line-through;margin-bottom:4px">489,000원</div>
         <div style="font-size:26px;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">389,000<span style="font-size:0.5em">원</span></div>
         <div style="margin-top:14px;padding:12px;background:rgba(255,255,255,0.1);border-radius:10px;font-size:13px;font-weight:700;color:var(--white)">결제 페이지로 →</div>
       </a>
 
-      <a href="LINK_PLANNING_PRODUCT" class="final-option-btn featured">
+      <a href="https://ainspire.imweb.me/class/?idx=17" class="final-option-btn featured">
         <div style="font-size:12px;color:var(--purple-300);letter-spacing:0.1em;margin-bottom:6px;font-weight:700">🎯 기획+BASIC</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:line-through;margin-bottom:4px">578,000원</div>
         <div style="font-size:26px;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">478,000<span style="font-size:0.5em">원</span></div>
         <div style="margin-top:14px;padding:12px;background:var(--purple-500);border-radius:10px;font-size:13px;font-weight:700;color:var(--white)">결제 페이지로 →</div>
       </a>
 
-      <a href="LINK_FULL_PRODUCT" class="final-option-btn best">
+      <a href="https://ainspire.imweb.me/class/?idx=18" class="final-option-btn best">
         <div style="font-size:11px;color:var(--ink);background:var(--yellow);padding:4px 12px;border-radius:999px;display:inline-block;letter-spacing:0.08em;font-weight:800;margin-bottom:8px">⭐ BEST VALUE</div>
         <div style="font-size:12px;color:var(--yellow);letter-spacing:0.1em;margin-bottom:6px;font-weight:700">🔥 풀 패키지</div>
         <div style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:line-through;margin-bottom:4px">1,467,000원</div>
-        <div style="font-size:30px;font-weight:900;color:var(--yellow);letter-spacing:-0.02em;line-height:1">589,000<span style="font-size:0.5em">원</span></div>
+        <div style="font-size:30px;font-weight:900;color:var(--yellow);letter-spacing:-0.02em;line-height:1">586,800<span style="font-size:0.5em">원</span></div>
         <div style="margin-top:14px;padding:12px;background:var(--yellow);color:var(--ink);border-radius:10px;font-size:13px;font-weight:800">결제 페이지로 →</div>
       </a>
     </div>
@@ -6215,7 +6162,7 @@ Basic 결제 후 *기획+Basic* 또는 *풀 패키지*로 업그레이드를 원
       <path fill="url(#mob-grad-b)" d="M68.82,49.19c.23-1.05.38-2.13.45-3.23-.01,0-.02.02-.03.03-9.23,6.73-12.2,13.51-14.07,19.08,6.92-2.8,12.11-8.71,13.66-15.88Z"/>
     </svg>
     <div>
-      <div style="font-size:10px;color:var(--yellow);font-weight:800;letter-spacing:0.05em">🎁 사전예약 -100,000원 · 5/28~6/12</div>
+      <div style="font-size:10px;color:var(--yellow);font-weight:800;letter-spacing:0.05em">🎁 사전예약 -100,000원 · 6/1~6/12</div>
       <div class="price" style="font-size:18px">389,000<small style="font-size:0.5em">원</small><span style="font-size:0.5em;color:rgba(255,255,255,0.55);margin-left:4px">~</span></div>
     </div>
   </div>
