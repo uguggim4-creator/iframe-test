@@ -2745,7 +2745,7 @@ footer{
 
 .curric-week-header{
   display:grid;
-  grid-template-columns:90px 1fr;
+  grid-template-columns:90px 1fr auto;
   align-items:center;
   gap:24px;
   padding:28px 32px;
@@ -2754,6 +2754,7 @@ footer{
 .curric-week-card.bonus .curric-week-header{border-bottom-color:rgba(255,255,255,0.1)}
 @media(max-width:760px){
   .curric-week-header{grid-template-columns:60px 1fr;padding:22px 22px;gap:14px}
+  .curric-week-badges{grid-column:1/-1;margin-top:6px;justify-content:flex-start !important}
 }
 .curric-week-num{
   font-size:32px;
@@ -2782,6 +2783,32 @@ footer{
   letter-spacing:-0.005em;
   line-height:1.5;
 }
+.curric-week-badges{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  align-items:center;
+  max-width:280px;
+}
+.curric-badge{
+  display:inline-block;
+  font-size:10px;
+  font-weight:800;
+  padding:5px 11px;
+  border-radius:999px;
+  background:var(--purple-100);
+  color:var(--purple-600);
+  letter-spacing:0.04em;
+  white-space:nowrap;
+}
+.curric-badge.demo{background:#ffe6f5;color:#a8004f}
+.curric-badge.milestone{background:var(--yellow);color:var(--ink)}
+.curric-badge.bonus-tag{background:var(--purple-500);color:var(--white)}
+.curric-badge.director{background:#1a0a3d;color:var(--yellow)}
+.curric-badge.pivot{background:#fff0d6;color:#9d5500}
+.curric-badge.warning{background:#ffe5e5;color:#9d0000}
+.curric-badge.timer{background:#e5f5ff;color:#005a9d}
 .curric-week-body{
   padding:24px 32px;
   display:grid;
@@ -4498,31 +4525,62 @@ footer{
         <div class="curric-week-header">
           <div class="curric-week-num">W5</div>
           <div>
-            <h3 class="curric-week-title">숏드라마 반자동화 에이전트 — 대사·캐릭터 단편 완성</h3>
-            <p class="curric-week-catch">대사 있는 사람이 둘 이상 나오는 영상까지</p>
+            <h3 class="curric-week-title">숏드라마 반자동화 에이전트 — 대사·다중 캐릭터 단편 완성</h3>
+            <p class="curric-week-catch">AI가 못 한다던 '대사 치는 배우 둘' — 립싱크·보이스·오디오 믹스까지 넘어 <strong>진짜 드라마</strong>를 완성합니다</p>
+          </div>
+          <div class="curric-week-badges">
+            <span class="curric-badge demo">🎬 단편 완성</span>
+            <span class="curric-badge milestone">🗣 대사·립싱크</span>
           </div>
         </div>
         <div class="curric-week-body">
+          <div style="grid-column:1 / -1;margin-bottom:6px;padding:18px 22px;background:linear-gradient(135deg,#170a34 0%,#2a1250 60%,#3a1a5e 100%);border:1.5px solid var(--accent-gold);border-radius:14px;box-shadow:0 8px 26px rgba(23,10,52,.28)">
+            <div style="display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;color:#170a34;background:var(--yellow);padding:5px 13px;border-radius:99px;margin-bottom:12px">⭐ 4기 강의의 시그니쳐</div>
+            <div style="font-size:21px;font-weight:800;line-height:1.55;color:#ffffff;letter-spacing:-.01em">
+              <span style="color:#f0e3b5">fable5</span>로 <b style="color:#7ec8f0">2·3기 기획강의</b>와 <b style="color:#7ec8f0">15권의 시나리오 책</b>의 엑기스를 담은<br>
+              <span style="color:var(--yellow);font-size:23px">AInspire 자동화 에이전트</span> 제공
+            </div>
+            <div style="margin-top:10px;font-size:13px;font-weight:600;color:rgba(255,255,255,.72)">※ <span style="color:#f0e3b5;font-weight:800">fable5 추가 충전 80만원</span>의 토큰으로 직접 제작</div>
+          </div>
+          <div style="grid-column:1 / -1;margin:2px 0 12px;padding:20px 22px;background:linear-gradient(135deg,#f6f3ff 0%,#edf6fc 100%);border:1.5px solid var(--sky);border-radius:14px">
+            <div style="font-size:19px;font-weight:800;line-height:1.5;color:var(--ink);letter-spacing:-.01em;margin-bottom:14px"><span style="color:var(--accent-warm)">AI가 맡기는 것이 아닌,</span> 인간이 <b style="color:#00b4d8">조립·해체</b>할 수 있는 <b style="color:#9a7434">시나리오 치트키</b> <span style="font-size:15px;font-weight:600;color:#5a5070">— 완벽한 오리지널 스토리</span></div>
+            <div style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--ink);background:var(--yellow);padding:4px 12px;border-radius:99px;margin-bottom:13px">🔥 4기 강의 하이라이트</div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+              <div style="padding:13px 15px;background:#fff;border:1px solid var(--line);border-radius:11px">
+                <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:7px"><span style="font-weight:800;font-size:14px;color:var(--ink)">시나리오 작법 강의</span><span style="font-weight:800;font-size:17px;color:#00b4d8;white-space:nowrap">50p</span></div>
+                <div style="font-size:12.5px;line-height:1.55;color:#453e54"><b>AI가 써주지 않습니다.</b> 15권의 시나리오 작법서 엑기스로, 나만의 오리지널 스토리를 내 취향에 맞게 짓는 법.</div>
+              </div>
+              <div style="padding:13px 15px;background:#fff;border:1px solid var(--line);border-radius:11px">
+                <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:7px"><span style="font-weight:800;font-size:14px;color:var(--ink)">명작 드라마 3편 분석</span><span style="font-weight:800;font-size:17px;color:#00b4d8;white-space:nowrap">18p</span></div>
+                <div style="font-size:12.5px;line-height:1.55;color:#453e54">장르가 <b>완전히 다른 명작 3편</b>을 시나리오 전반에서 <b>분석 + 내 작품에 적용</b>하는 법.</div>
+              </div>
+              <div style="padding:13px 15px;background:#fff;border:1px solid var(--line);border-radius:11px">
+                <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:7px"><span style="font-weight:800;font-size:14px;color:var(--ink)">하이브리드 시나리오·콘텐츠</span><span style="font-weight:800;font-size:17px;color:#00b4d8;white-space:nowrap">18p</span></div>
+                <div style="font-size:12.5px;line-height:1.55;color:#453e54">명작에서 그치지 않고 <b>대중성</b>까지. 상위 <b>80개 숏드라마 분석 보고서</b>로 유입율·지속율을 높이는 <b>작품성+대중성</b> 제작.</div>
+              </div>
+            </div>
+          </div>
           <div class="curric-week-col">
             <h4>📚 다룰 내용</h4>
             <ul>
-              <li><strong>AInspire 숏드라마 반자동화 에이전트</strong> 활용</li>
-              <li>크레딧을 줄이면서 시간을 세이브 하는 프로세스</li>
-              <li>다중 캐릭터 씬 — @Tag 시스템, 180도 법칙</li>
-              <li>대사 립싱크 (Seedance · Kling) — 한계와 우회</li>
-              <li>오디오 풀 믹스 — 다이얼로그 / BGM</li>
-              <li>ElevenLabs 보이스 매칭, LUFS 표준화</li>
-              <li>가편 · 자막 반자동화</li>
+              <li><strong>AInspire 숏드라마 반자동화 에이전트</strong> — 질문에 답만 하면 기획·키시트·컷·오디오·자막까지 <strong>한 번에</strong> 굴러갑니다</li>
+              <li><strong>크레딧 반, 시간 반</strong> — 백그라운드 배치·레퍼런스 다운스케일·plate 재사용으로 제작비를 최소화하는 실전 프로세스</li>
+              <li><strong>다중 캐릭터 씬의 핵심</strong> — @Tag 시스템으로 인물 얼굴을 컷마다 고정, 180도 법칙으로 대화 시선이 안 튀게</li>
+              <li><strong>대사 립싱크 (Seedance · Kling)</strong> — 어디까지 되고 어디서 깨지는지, 오프스크린·무표정 연출로 <strong>깔끔하게 우회</strong>하는 법</li>
+              <li><strong>오디오 풀 믹스</strong> — 다이얼로그·BGM·SFX 3중 레이어링과 드롭 타임코드로 '들리는' 사운드 설계</li>
+              <li><strong>ElevenLabs 보이스 매칭 & LUFS 표준화</strong> — 인물별 목소리를 고정하고 −14 LUFS 플랫폼 규격에 맞추기</li>
+              <li><strong>가편·자막 반자동화</strong> — ffmpeg 비트 싱크 하드컷 + 플로팅 자막으로 편집 시간을 압축</li>
             </ul>
           </div>
           <div class="curric-week-col">
             <h4>📦 체크</h4>
             <ul>
-              <li>단편 1편 완성 (3~5분, 대사 · BGM · SFX · 자막)</li>
+              <li><strong>숏드라마 단편 1편</strong> 완성 (3~5분 · 대사 · BGM · SFX · 자막)</li>
+              <li>같은 소스로 <strong>세로 9:16 훅 3개</strong> 파생 — 세 번의 유입 기회</li>
             </ul>
             <div class="curric-mission-box">
               <strong>🎯 미션</strong>
-              숏드라마 <strong>포트폴리오</strong> 만들기
+              내 채널에 올릴 <strong>숏드라마 포트폴리오</strong> — 단편 1편 + 훅 3개 완성
             </div>
           </div>
         </div>
